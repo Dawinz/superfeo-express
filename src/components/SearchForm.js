@@ -189,19 +189,19 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
   return (
     <div>
       <div>
-          <div id="search-form" className="bg-gradient-to-br from-kisesa-blue via-kisesa-yellow to-kisesa-gray rounded-xl shadow-2xl shadow-kisesa-yellow/40 p-2 sm:p-3 md:p-4 mx-1 md:-mt-16 relative z-20 md:mx-2 sm:mx-4">
+          <div id="search-form" className="bg-gradient-to-br from-superfeo-red via-superfeo-gold to-superfeo-white rounded-xl shadow-2xl shadow-superfeo-red/40 p-2 sm:p-3 md:p-4 mx-1 md:-mt-16 relative z-20 md:mx-2 sm:mx-4">
             <div className="max-w-6xl mx-auto w-full max-w-xs sm:max-w-lg md:max-w-4xl">
               {/* Form Header */}
               <div className="text-center mb-1 sm:mb-2">
                 <h3 className="text-xs sm:text-lg md:text-xl font-bebas font-bold text-white mb-0.5 sm:mb-1 tracking-wide">
                   {t('findYourJourney')}
                 </h3>
-                <p className="text-kisesa-white font-poppins text-2xs sm:text-xs md:text-sm hidden sm:block">
+                <p className="text-superfeo-white font-poppins text-2xs sm:text-xs md:text-sm hidden sm:block">
                   {t('searchBookPremium')}
                 </p>
                 {/* Error Message */}
                 {error && (
-                  <div className="mt-1 sm:mt-2 p-1 sm:p-2 bg-red-100 border-2 border-kisesa-yellow text-kisesa-red rounded-lg font-poppins text-2xs sm:text-xs font-semibold">
+                  <div className="mt-1 sm:mt-2 p-1 sm:p-2 bg-red-100 border-2 border-superfeo-gold text-superfeo-red rounded-lg font-poppins text-2xs sm:text-xs font-semibold">
                     ⚠️ {error}
                   </div>
                 )}
@@ -219,7 +219,7 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
                       name="from"
                       value={formData.from}
                       onChange={handleInputChange}
-                      className="w-full p-2 sm:p-2.5 border-2 border-kisesa-gray rounded-lg focus:border-kisesa-yellow focus:outline-none font-poppins text-kisesa-blue bg-kisesa-gray text-xs sm:text-sm"
+                      className="w-full p-2 sm:p-2.5 border-2 border-superfeo-gray rounded-lg focus:border-superfeo-gold focus:outline-none font-poppins text-superfeo-darkgray bg-superfeo-white text-xs sm:text-sm"
                       required
                     >
                       <option value="">{t('selectDeparture')}</option>
@@ -238,7 +238,7 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
                       name="to"
                       value={formData.to}
                       onChange={handleInputChange}
-                      className="w-full p-2 sm:p-2.5 border-2 border-kisesa-gray rounded-lg focus:border-kisesa-yellow focus:outline-none font-poppins text-kisesa-blue bg-kisesa-gray text-xs sm:text-sm"
+                      className="w-full p-2 sm:p-2.5 border-2 border-superfeo-gray rounded-lg focus:border-superfeo-gold focus:outline-none font-poppins text-superfeo-darkgray bg-superfeo-white text-xs sm:text-sm"
                       required
                     >
                       <option value="">{t('selectDestination')}</option>
@@ -259,7 +259,7 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
                       value={formData.date}
                       onChange={handleInputChange}
                       min={new Date().toISOString().split('T')[0]}
-                      className="w-full p-2 sm:p-2.5 border-2 border-kisesa-gray rounded-lg focus:border-kisesa-yellow focus:outline-none font-poppins text-kisesa-blue text-xs sm:text-sm bg-kisesa-gray"
+                      className="w-full p-2 sm:p-2.5 border-2 border-superfeo-gray rounded-lg focus:border-superfeo-gold focus:outline-none font-poppins text-superfeo-darkgray text-xs sm:text-sm bg-superfeo-white"
                       required
                     />
                   </div>
@@ -273,7 +273,7 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
                       name="passengers"
                       value={formData.passengers}
                       onChange={handleInputChange}
-                      className="w-full p-2 sm:p-2.5 border-2 border-kisesa-gray rounded-lg focus:border-kisesa-yellow focus:outline-none font-poppins text-kisesa-blue bg-kisesa-gray text-xs sm:text-sm"
+                      className="w-full p-2 sm:p-2.5 border-2 border-superfeo-gray rounded-lg focus:border-superfeo-gold focus:outline-none font-poppins text-superfeo-darkgray bg-superfeo-white text-xs sm:text-sm"
                     >
                       {[1,2,3,4,5,6,7,8,9,10].map(num => (
                         <option key={num} value={num}>{num} {num > 1 ? t('passengers') : t('passenger')}</option>
@@ -292,7 +292,7 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
                       className={`w-full text-white font-poppins font-bold py-1.5 sm:py-2 px-2 sm:px-3 rounded-lg transition-all duration-200 shadow-lg text-2xs sm:text-xs ${
                         isLoading 
                           ? 'bg-gray-400 cursor-not-allowed' 
-                          : 'bg-kisesa-yellow hover:bg-orange-600 transform hover:scale-105'
+                          : 'bg-superfeo-gold hover:bg-yellow-600 transform hover:scale-105'
                       }`}
                     >
                       {isLoading ? (
@@ -332,7 +332,7 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
                         setError('');
                       }}
                       disabled={isLoading}
-                      className="text-2xs sm:text-xs bg-gray-100 hover:bg-kisesa-blue hover:text-white text-gray-700 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full font-poppins transition-colors duration-200 disabled:opacity-50"
+                      className="text-2xs sm:text-xs bg-gray-100 hover:bg-superfeo-red hover:text-white text-gray-700 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full font-poppins transition-colors duration-200 disabled:opacity-50"
                     >
                       {route}
                     </button>

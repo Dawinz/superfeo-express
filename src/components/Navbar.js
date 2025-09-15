@@ -39,14 +39,14 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-kisesa-yellow text-kisesa-blue shadow-lg sticky top-0 z-50">
+    <nav className="bg-superfeo-red text-superfeo-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
             <Link 
               to="/" 
-              className="text-xl font-bebas font-bold tracking-wider hover:text-kisesa-yellow transition-colors duration-200"
+              className="text-xl font-bebas font-bold tracking-wider hover:text-superfeo-gold transition-colors duration-200"
               onClick={closeMenu}
             >
               SUPER FEO EXPRESS
@@ -58,25 +58,25 @@ const Navbar = () => {
             <div className="ml-10 flex items-center space-x-8">
               <Link
                 to="/"
-                className="hover:text-kisesa-blue hover:bg-kisesa-blue hover:bg-opacity-10 px-3 py-2 rounded-md transition-all duration-200 font-poppins font-medium"
+                className="hover:text-superfeo-gold hover:bg-superfeo-white hover:bg-opacity-10 px-3 py-2 rounded-md transition-all duration-200 font-poppins font-medium"
               >
                 {t('home')}
               </Link>
               <Link
                 to="/routes"
-                className="hover:text-kisesa-blue hover:bg-kisesa-blue hover:bg-opacity-10 px-3 py-2 rounded-md transition-all duration-200 font-poppins font-medium"
+                className="hover:text-superfeo-gold hover:bg-superfeo-white hover:bg-opacity-10 px-3 py-2 rounded-md transition-all duration-200 font-poppins font-medium"
               >
                 {t('routes')}
               </Link>
               <Link
                 to="/gallery"
-                className="hover:text-kisesa-blue hover:bg-kisesa-blue hover:bg-opacity-10 px-3 py-2 rounded-md transition-all duration-200 font-poppins font-medium"
+                className="hover:text-superfeo-gold hover:bg-superfeo-white hover:bg-opacity-10 px-3 py-2 rounded-md transition-all duration-200 font-poppins font-medium"
               >
                 {t('gallery')}
               </Link>
               <Link
                 to="/contact"
-                className="hover:text-kisesa-blue hover:bg-kisesa-blue hover:bg-opacity-10 px-3 py-2 rounded-md transition-all duration-200 font-poppins font-medium"
+                className="hover:text-superfeo-gold hover:bg-superfeo-white hover:bg-opacity-10 px-3 py-2 rounded-md transition-all duration-200 font-poppins font-medium"
               >
                 {t('contact')}
               </Link>
@@ -104,7 +104,7 @@ const Navbar = () => {
           <div className="md:hidden mobile-menu-container">
             <button
               onClick={toggleMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-kisesa-yellow hover:bg-kisesa-blue focus:outline-none focus:ring-2 focus:ring-inset focus:ring-kisesa-yellow transition-colors duration-200"
+              className="inline-flex items-center justify-center p-2 rounded-md text-white hover:text-superfeo-gold hover:bg-superfeo-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-superfeo-gold transition-colors duration-200"
               aria-expanded="false"
               aria-label="Toggle navigation menu"
             >
@@ -137,31 +137,31 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <div className={`md:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
-          <div className="px-2 pt-2 pb-3 space-y-1 bg-kisesa-yellow border-t border-kisesa-blue">
+          <div className="px-2 pt-2 pb-3 space-y-1 bg-superfeo-red border-t border-superfeo-white">
             <Link
               to="/"
-              className="block px-3 py-3 rounded-md text-base font-poppins font-medium text-kisesa-blue hover:text-white hover:bg-kisesa-blue transition-colors duration-200"
+              className="block px-3 py-3 rounded-md text-base font-poppins font-medium text-superfeo-white hover:text-superfeo-gold hover:bg-superfeo-white hover:bg-opacity-10 transition-colors duration-200"
               onClick={closeMenu}
             >
               {t('home')}
             </Link>
             <Link
               to="/routes"
-              className="block px-3 py-3 rounded-md text-base font-poppins font-medium text-kisesa-blue hover:text-white hover:bg-kisesa-blue transition-colors duration-200"
+              className="block px-3 py-3 rounded-md text-base font-poppins font-medium text-superfeo-white hover:text-superfeo-gold hover:bg-superfeo-white hover:bg-opacity-10 transition-colors duration-200"
               onClick={closeMenu}
             >
               {t('routes')}
             </Link>
             <Link
               to="/gallery"
-              className="block px-3 py-3 rounded-md text-base font-poppins font-medium text-kisesa-blue hover:text-white hover:bg-kisesa-blue transition-colors duration-200"
+              className="block px-3 py-3 rounded-md text-base font-poppins font-medium text-superfeo-white hover:text-superfeo-gold hover:bg-superfeo-white hover:bg-opacity-10 transition-colors duration-200"
               onClick={closeMenu}
             >
               {t('gallery')}
             </Link>
             <Link
               to="/contact"
-              className="block px-3 py-3 rounded-md text-base font-poppins font-medium text-kisesa-blue hover:text-white hover:bg-kisesa-blue transition-colors duration-200"
+              className="block px-3 py-3 rounded-md text-base font-poppins font-medium text-superfeo-white hover:text-superfeo-gold hover:bg-superfeo-white hover:bg-opacity-10 transition-colors duration-200"
               onClick={closeMenu}
             >
               {t('contact')}

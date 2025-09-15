@@ -7,7 +7,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 const Home = ({ setIsBookingDialogOpen }) => {
   const { t } = useLanguage();
   return (
-    <div className="min-h-screen bg-kisesa-blue">
+    <div className="min-h-screen bg-superfeo-red">
       {/* Hero Section with Overlay Form on Mobile */}
       <section className="relative">
         <Hero />
@@ -31,13 +31,13 @@ const Home = ({ setIsBookingDialogOpen }) => {
         </div>
       </section>
       {/* Features Section */}
-      <section className="py-8 bg-kisesa-gray mt-8">
+      <section className="py-8 bg-superfeo-gray mt-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-6">
-            <h2 className="text-3xl md:text-4xl font-bebas font-bold text-kisesa-blue mb-4 tracking-wide">
+            <h2 className="text-3xl md:text-4xl font-bebas font-bold text-superfeo-white mb-4 tracking-wide">
               {t('whyChoose')}
             </h2>
-            <p className="text-lg text-kisesa-blue font-poppins max-w-2xl mx-auto">
+            <p className="text-lg text-superfeo-white font-poppins max-w-2xl mx-auto">
               {t('experienceDifference')}
             </p>
           </div>

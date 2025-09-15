@@ -6,13 +6,15 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        kisesa: {
-          blue: '#1E3A8A',
-          yellow: '#FCD34D',
-          lightblue: '#3B82F6',
-          gray: '#E5E7EB',
-          white: '#FFFFFF',
-          dark: '#1F2937',
+        superfeo: {
+          red: '#DC2626',        // Primary red from Super Feo buses
+          darkred: '#B91C1C',    // Darker red for hover states
+          lightred: '#FEE2E2',   // Light red for backgrounds
+          white: '#FFFFFF',      // White from bus design
+          gray: '#F3F4F6',       // Light gray for backgrounds
+          darkgray: '#374151',   // Dark gray for text
+          black: '#111827',      // Black for contrast
+          gold: '#F59E0B',       // Gold accent color
         }
       },
       fontFamily: {
