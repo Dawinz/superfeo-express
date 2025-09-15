@@ -12,9 +12,19 @@ const Footer = () => {
           
           {/* Company Info Section */}
           <div className="lg:col-span-2">
-            <h3 className="text-2xl font-heading font-bold mb-4 tracking-wide">
-              SUPER FEO EXPRESS
-            </h3>
+            <div className="flex items-center space-x-3 mb-4">
+              <img 
+                src="/images/superfeo-logo.png" 
+                alt="Super Feo Express Logo" 
+                className="h-12 w-12"
+              />
+              <h3 className="text-2xl font-heading font-bold tracking-wide">
+                SUPER FEO EXPRESS
+              </h3>
+            </div>
+            <p className="text-superfeo-gold font-heading font-bold text-lg mb-2">
+              {t('motto')}
+            </p>
             <p className="text-gray-300 font-body mb-4 text-lg">
               {t('footerTagline')}
             </p>
@@ -93,6 +103,28 @@ const Footer = () => {
           </div>
         </div>
 
+        {/* Newsletter Section */}
+        <div className="border-t border-gray-600 pt-6 mb-6">
+          <div className="max-w-md mx-auto text-center">
+            <h4 className="text-lg font-heading font-bold mb-4 tracking-wide text-superfeo-gold">
+              Newsletter
+            </h4>
+            <p className="text-gray-300 font-body text-sm mb-4">
+              Subscribe to our Newsletter right now to be updated.
+            </p>
+            <div className="flex">
+              <input
+                type="email"
+                placeholder="Email"
+                className="flex-1 px-3 py-2 text-sm text-gray-900 bg-white border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-superfeo-gold focus:border-transparent"
+              />
+              <button className="px-4 py-2 bg-superfeo-gold text-white text-sm font-body font-semibold rounded-r-md hover:bg-yellow-600 transition-colors duration-200">
+                JOIN
+              </button>
+            </div>
+          </div>
+        </div>
+
         {/* Social Media & Bottom Section */}
         <div className="border-t border-gray-600 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
@@ -140,7 +172,7 @@ const Footer = () => {
 
             {/* Copyright */}
             <div className="text-gray-400 font-body text-sm">
-              © {new Date().getFullYear()} Super Feo Express. {t('allRightsReserved')}.
+              © Super Feo Enterprises 2023
             </div>
           </div>
         </div>

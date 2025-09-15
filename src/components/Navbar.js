@@ -43,13 +43,20 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-          <div className="flex-shrink-0">
+          <div className="flex-shrink-0 flex items-center">
             <Link 
               to="/" 
-              className="text-xl font-heading font-bold tracking-wider hover:text-superfeo-gold transition-colors duration-200"
+              className="flex items-center space-x-2 hover:text-superfeo-gold transition-colors duration-200"
               onClick={closeMenu}
             >
-              SUPER FEO EXPRESS
+              <img 
+                src="/images/superfeo-logo.png" 
+                alt="Super Feo Express Logo" 
+                className="h-8 w-8 sm:h-10 sm:w-10"
+              />
+              <span className="text-xl font-heading font-bold tracking-wider">
+                SUPER FEO EXPRESS
+              </span>
             </Link>
           </div>
 

@@ -47,6 +47,7 @@ export const LanguageProvider = ({ children }) => {
         
         // Features
         whyChoose: 'WHY CHOOSE SUPER FEO EXPRESS',
+        motto: 'IN GOD WE TRUST',
         premiumComfort: 'PREMIUM COMFORT',
         comfortDesc: 'Luxury seats, air conditioning, and spacious interiors for your comfort',
         onTimeDeparture: 'ON-TIME DEPARTURE',
@@ -287,6 +288,7 @@ export const LanguageProvider = ({ children }) => {
         fleetFour: 'Gari la Nne',
         mobileView: 'Mwonekano wa Simu',
         whyChooseKisesaExpress: 'KWA NINI UCHAGUE SUPER FEO EXPRESS',
+        motto: 'TUMEMUAMINI MUNGU',
         premiumComfortDesc: 'Viti vya kifahari, hewa baridi, na mazingira mazuri ya ustarehe',
         onTimeDepartureDesc: 'Ratiba za kuaminika na huduma ya wakati unayoweza kutegemea',
         
