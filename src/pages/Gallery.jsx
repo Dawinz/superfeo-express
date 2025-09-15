@@ -119,10 +119,10 @@ const Gallery = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bebas font-bold text-kisesa-blue mb-4 tracking-wide">
+          <h1 className="text-4xl md:text-5xl font-heading font-bold text-kisesa-blue mb-4 tracking-wide">
             {t('ourGallery')}
           </h1>
-          <p className="text-lg text-gray-600 font-poppins max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 font-body max-w-2xl mx-auto">
             {t('galleryDesc')}
           </p>
         </div>
@@ -144,7 +144,7 @@ const Gallery = () => {
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="text-lg font-bebas font-bold tracking-wide">
+                    <h3 className="text-lg font-heading font-bold tracking-wide">
                       {image.title}
                     </h3>
                   </div>
@@ -161,7 +161,7 @@ const Gallery = () => {
 
         {/* Features Section */}
         <div className="mt-16 text-center">
-          <h2 className="text-3xl md:text-4xl font-bebas font-bold text-kisesa-blue mb-8 tracking-wide">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-kisesa-blue mb-8 tracking-wide">
             {t('whyChooseKisesaExpress')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -171,10 +171,10 @@ const Gallery = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-bebas font-bold text-kisesa-blue mb-2 tracking-wide">
+              <h3 className="text-xl font-heading font-bold text-kisesa-blue mb-2 tracking-wide">
                 {t('premiumComfort')}
               </h3>
-              <p className="text-gray-600 font-poppins">
+              <p className="text-gray-600 font-body">
                 {t('premiumComfortDesc')}
               </p>
             </div>
@@ -184,10 +184,10 @@ const Gallery = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-bebas font-bold text-kisesa-blue mb-2 tracking-wide">
+              <h3 className="text-xl font-heading font-bold text-kisesa-blue mb-2 tracking-wide">
                 {t('onTimeDeparture')}
               </h3>
-              <p className="text-gray-600 font-poppins">
+              <p className="text-gray-600 font-body">
                 {t('onTimeDepartureDesc')}
               </p>
             </div>
@@ -197,10 +197,10 @@ const Gallery = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-bebas font-bold text-kisesa-blue mb-2 tracking-wide">
+              <h3 className="text-xl font-heading font-bold text-kisesa-blue mb-2 tracking-wide">
                 {t('safeTravel')}
               </h3>
-              <p className="text-gray-600 font-poppins">
+              <p className="text-gray-600 font-body">
                 {t('safeTravelDesc')}
               </p>
             </div>
@@ -229,10 +229,10 @@ const Gallery = () => {
               className="max-w-full max-h-full object-contain rounded-lg"
             />
             <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/70 to-transparent p-6 rounded-b-lg">
-              <h3 className="text-2xl font-bebas font-bold text-white tracking-wide">
+              <h3 className="text-2xl font-heading font-bold text-white tracking-wide">
                 {selectedImage.title}
               </h3>
-              <p className="text-gray-200 font-poppins">
+              <p className="text-gray-200 font-body">
                 {selectedImage.alt}
               </p>
             </div>

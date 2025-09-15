@@ -193,15 +193,15 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
             <div className="max-w-6xl mx-auto w-full max-w-xs sm:max-w-lg md:max-w-4xl">
               {/* Form Header */}
               <div className="text-center mb-1 sm:mb-2">
-                <h3 className="text-xs sm:text-lg md:text-xl font-bebas font-bold text-white mb-0.5 sm:mb-1 tracking-wide">
+                <h3 className="text-xs sm:text-lg md:text-xl font-heading font-bold text-white mb-0.5 sm:mb-1 tracking-wide">
                   {t('findYourJourney')}
                 </h3>
-                <p className="text-superfeo-white font-poppins text-2xs sm:text-xs md:text-sm hidden sm:block">
+                <p className="text-superfeo-white font-body text-2xs sm:text-xs md:text-sm hidden sm:block">
                   {t('searchBookPremium')}
                 </p>
                 {/* Error Message */}
                 {error && (
-                  <div className="mt-1 sm:mt-2 p-1 sm:p-2 bg-red-100 border-2 border-superfeo-gold text-superfeo-red rounded-lg font-poppins text-2xs sm:text-xs font-semibold">
+                  <div className="mt-1 sm:mt-2 p-1 sm:p-2 bg-red-100 border-2 border-superfeo-gold text-superfeo-red rounded-lg font-body text-2xs sm:text-xs font-semibold">
                     ⚠️ {error}
                   </div>
                 )}
@@ -212,14 +212,14 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-2 sm:gap-2">
                   {/* From */}
                   <div className="space-y-1 sm:space-y-1.5">
-                    <label className="block text-2xs sm:text-xs font-poppins font-semibold text-kisesa-white mb-1">
+                    <label className="block text-2xs sm:text-xs font-body font-semibold text-kisesa-white mb-1">
                       {t('from')}
                     </label>
                     <select
                       name="from"
                       value={formData.from}
                       onChange={handleInputChange}
-                      className="w-full p-2 sm:p-2.5 border-2 border-superfeo-gray rounded-lg focus:border-superfeo-gold focus:outline-none font-poppins text-superfeo-darkgray bg-superfeo-white text-xs sm:text-sm"
+                      className="w-full p-2 sm:p-2.5 border-2 border-superfeo-gray rounded-lg focus:border-superfeo-gold focus:outline-none font-body text-superfeo-darkgray bg-superfeo-white text-xs sm:text-sm"
                       required
                     >
                       <option value="">{t('selectDeparture')}</option>
@@ -231,14 +231,14 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
 
                   {/* To */}
                   <div className="space-y-1 sm:space-y-1.5">
-                    <label className="block text-2xs sm:text-xs font-poppins font-semibold text-kisesa-white mb-1">
+                    <label className="block text-2xs sm:text-xs font-body font-semibold text-kisesa-white mb-1">
                       {t('to')}
                     </label>
                     <select
                       name="to"
                       value={formData.to}
                       onChange={handleInputChange}
-                      className="w-full p-2 sm:p-2.5 border-2 border-superfeo-gray rounded-lg focus:border-superfeo-gold focus:outline-none font-poppins text-superfeo-darkgray bg-superfeo-white text-xs sm:text-sm"
+                      className="w-full p-2 sm:p-2.5 border-2 border-superfeo-gray rounded-lg focus:border-superfeo-gold focus:outline-none font-body text-superfeo-darkgray bg-superfeo-white text-xs sm:text-sm"
                       required
                     >
                       <option value="">{t('selectDestination')}</option>
@@ -250,7 +250,7 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
 
                   {/* Date */}
                   <div className="space-y-1 sm:space-y-1.5">
-                    <label className="block text-2xs sm:text-xs font-poppins font-semibold text-kisesa-white mb-1">
+                    <label className="block text-2xs sm:text-xs font-body font-semibold text-kisesa-white mb-1">
                       {t('travelDate')}
                     </label>
                     <input
@@ -259,21 +259,21 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
                       value={formData.date}
                       onChange={handleInputChange}
                       min={new Date().toISOString().split('T')[0]}
-                      className="w-full p-2 sm:p-2.5 border-2 border-superfeo-gray rounded-lg focus:border-superfeo-gold focus:outline-none font-poppins text-superfeo-darkgray text-xs sm:text-sm bg-superfeo-white"
+                      className="w-full p-2 sm:p-2.5 border-2 border-superfeo-gray rounded-lg focus:border-superfeo-gold focus:outline-none font-body text-superfeo-darkgray text-xs sm:text-sm bg-superfeo-white"
                       required
                     />
                   </div>
 
                   {/* Passengers */}
                   <div className="space-y-1 sm:space-y-1.5">
-                    <label className="block text-2xs sm:text-xs font-poppins font-semibold text-kisesa-white mb-1">
+                    <label className="block text-2xs sm:text-xs font-body font-semibold text-kisesa-white mb-1">
                       {t('passengers')}
                     </label>
                     <select
                       name="passengers"
                       value={formData.passengers}
                       onChange={handleInputChange}
-                      className="w-full p-2 sm:p-2.5 border-2 border-superfeo-gray rounded-lg focus:border-superfeo-gold focus:outline-none font-poppins text-superfeo-darkgray bg-superfeo-white text-xs sm:text-sm"
+                      className="w-full p-2 sm:p-2.5 border-2 border-superfeo-gray rounded-lg focus:border-superfeo-gold focus:outline-none font-body text-superfeo-darkgray bg-superfeo-white text-xs sm:text-sm"
                     >
                       {[1,2,3,4,5,6,7,8,9,10].map(num => (
                         <option key={num} value={num}>{num} {num > 1 ? t('passengers') : t('passenger')}</option>
@@ -283,13 +283,13 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
 
                   {/* Search Button */}
                   <div className="space-y-1 sm:space-y-1.5 sm:col-span-2 md:col-span-1">
-                    <label className="text-2xs sm:text-xs font-poppins font-semibold text-transparent">
+                    <label className="text-2xs sm:text-xs font-body font-semibold text-transparent">
                       SEARCH
                     </label>
                     <button
                       type="submit"
                       disabled={isLoading}
-                      className={`w-full text-white font-poppins font-bold py-1.5 sm:py-2 px-2 sm:px-3 rounded-lg transition-all duration-200 shadow-lg text-2xs sm:text-xs ${
+                      className={`w-full text-white font-body font-bold py-1.5 sm:py-2 px-2 sm:px-3 rounded-lg transition-all duration-200 shadow-lg text-2xs sm:text-xs ${
                         isLoading 
                           ? 'bg-gray-400 cursor-not-allowed' 
                           : 'bg-superfeo-gold hover:bg-yellow-600 transform hover:scale-105'
@@ -313,7 +313,7 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
 
               {/* Popular Routes Quick Links */}
               <div className="mt-1 sm:mt-2 text-center hidden sm:block">
-                <p className="text-2xs sm:text-xs font-poppins text-white mb-1 sm:mb-1.5">{t('popularRoutes')}</p>
+                <p className="text-2xs sm:text-xs font-body text-white mb-1 sm:mb-1.5">{t('popularRoutes')}</p>
                 <div className="flex flex-wrap justify-center items-center gap-0.5 sm:gap-1 mx-auto w-fit">
                   {[
                     { route: 'Dar es Salaam - Dodoma', from: 'dar-es-salaam', to: 'dodoma' },
@@ -332,7 +332,7 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
                         setError('');
                       }}
                       disabled={isLoading}
-                      className="text-2xs sm:text-xs bg-gray-100 hover:bg-superfeo-pink hover:text-white text-gray-700 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full font-poppins transition-colors duration-200 disabled:opacity-50"
+                      className="text-2xs sm:text-xs bg-gray-100 hover:bg-superfeo-pink hover:text-white text-gray-700 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full font-body transition-colors duration-200 disabled:opacity-50"
                     >
                       {route}
                     </button>

@@ -46,7 +46,7 @@ const Navbar = () => {
           <div className="flex-shrink-0">
             <Link 
               to="/" 
-              className="text-xl font-bebas font-bold tracking-wider hover:text-superfeo-gold transition-colors duration-200"
+              className="text-xl font-heading font-bold tracking-wider hover:text-superfeo-gold transition-colors duration-200"
               onClick={closeMenu}
             >
               SUPER FEO EXPRESS
@@ -58,25 +58,25 @@ const Navbar = () => {
             <div className="ml-10 flex items-center space-x-8">
               <Link
                 to="/"
-                className="hover:text-superfeo-gold hover:bg-superfeo-white hover:bg-opacity-10 px-3 py-2 rounded-md transition-all duration-200 font-poppins font-medium"
+                className="hover:text-superfeo-gold hover:bg-superfeo-white hover:bg-opacity-10 px-3 py-2 rounded-md transition-all duration-200 font-body font-medium"
               >
                 {t('home')}
               </Link>
               <Link
                 to="/routes"
-                className="hover:text-superfeo-gold hover:bg-superfeo-white hover:bg-opacity-10 px-3 py-2 rounded-md transition-all duration-200 font-poppins font-medium"
+                className="hover:text-superfeo-gold hover:bg-superfeo-white hover:bg-opacity-10 px-3 py-2 rounded-md transition-all duration-200 font-body font-medium"
               >
                 {t('routes')}
               </Link>
               <Link
                 to="/gallery"
-                className="hover:text-superfeo-gold hover:bg-superfeo-white hover:bg-opacity-10 px-3 py-2 rounded-md transition-all duration-200 font-poppins font-medium"
+                className="hover:text-superfeo-gold hover:bg-superfeo-white hover:bg-opacity-10 px-3 py-2 rounded-md transition-all duration-200 font-body font-medium"
               >
                 {t('gallery')}
               </Link>
               <Link
                 to="/contact"
-                className="hover:text-superfeo-gold hover:bg-superfeo-white hover:bg-opacity-10 px-3 py-2 rounded-md transition-all duration-200 font-poppins font-medium"
+                className="hover:text-superfeo-gold hover:bg-superfeo-white hover:bg-opacity-10 px-3 py-2 rounded-md transition-all duration-200 font-body font-medium"
               >
                 {t('contact')}
               </Link>
@@ -140,28 +140,28 @@ const Navbar = () => {
           <div className="px-2 pt-2 pb-3 space-y-1 bg-superfeo-pink border-t border-superfeo-white">
             <Link
               to="/"
-              className="block px-3 py-3 rounded-md text-base font-poppins font-medium text-superfeo-white hover:text-superfeo-gold hover:bg-superfeo-white hover:bg-opacity-10 transition-colors duration-200"
+              className="block px-3 py-3 rounded-md text-base font-body font-medium text-superfeo-white hover:text-superfeo-gold hover:bg-superfeo-white hover:bg-opacity-10 transition-colors duration-200"
               onClick={closeMenu}
             >
               {t('home')}
             </Link>
             <Link
               to="/routes"
-              className="block px-3 py-3 rounded-md text-base font-poppins font-medium text-superfeo-white hover:text-superfeo-gold hover:bg-superfeo-white hover:bg-opacity-10 transition-colors duration-200"
+              className="block px-3 py-3 rounded-md text-base font-body font-medium text-superfeo-white hover:text-superfeo-gold hover:bg-superfeo-white hover:bg-opacity-10 transition-colors duration-200"
               onClick={closeMenu}
             >
               {t('routes')}
             </Link>
             <Link
               to="/gallery"
-              className="block px-3 py-3 rounded-md text-base font-poppins font-medium text-superfeo-white hover:text-superfeo-gold hover:bg-superfeo-white hover:bg-opacity-10 transition-colors duration-200"
+              className="block px-3 py-3 rounded-md text-base font-body font-medium text-superfeo-white hover:text-superfeo-gold hover:bg-superfeo-white hover:bg-opacity-10 transition-colors duration-200"
               onClick={closeMenu}
             >
               {t('gallery')}
             </Link>
             <Link
               to="/contact"
-              className="block px-3 py-3 rounded-md text-base font-poppins font-medium text-superfeo-white hover:text-superfeo-gold hover:bg-superfeo-white hover:bg-opacity-10 transition-colors duration-200"
+              className="block px-3 py-3 rounded-md text-base font-body font-medium text-superfeo-white hover:text-superfeo-gold hover:bg-superfeo-white hover:bg-opacity-10 transition-colors duration-200"
               onClick={closeMenu}
             >
               {t('contact')}

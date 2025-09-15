@@ -12,13 +12,13 @@ const Footer = () => {
           
           {/* Company Info Section */}
           <div className="lg:col-span-2">
-            <h3 className="text-2xl font-bebas font-bold mb-4 tracking-wide">
+            <h3 className="text-2xl font-heading font-bold mb-4 tracking-wide">
               SUPER FEO EXPRESS
             </h3>
-            <p className="text-gray-300 font-poppins mb-4 text-lg">
+            <p className="text-gray-300 font-body mb-4 text-lg">
               {t('footerTagline')}
             </p>
-            <p className="text-gray-400 font-poppins text-sm leading-relaxed">
+            <p className="text-gray-400 font-body text-sm leading-relaxed">
               {t('footerDescription')}
             </p>
           </div>
@@ -28,7 +28,7 @@ const Footer = () => {
             <h4 className="text-lg font-bebas font-bold mb-4 tracking-wide text-superfeo-gold">
               {t('quickLinks')}
             </h4>
-            <ul className="space-y-2 font-poppins">
+            <ul className="space-y-2 font-body">
               <li>
                 <Link to="/" className="text-gray-300 hover:text-superfeo-gold transition-colors duration-200">
                   {t('home')}
@@ -57,7 +57,7 @@ const Footer = () => {
             <h4 className="text-lg font-bebas font-bold mb-4 tracking-wide text-superfeo-gold">
               {t('contactInfo')}
             </h4>
-            <div className="space-y-3 font-poppins text-sm">
+            <div className="space-y-3 font-body text-sm">
               {/* Phone */}
               <div className="flex items-center space-x-2">
                 <svg className="w-4 h-4 text-superfeo-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -99,7 +99,7 @@ const Footer = () => {
             
             {/* Social Media Links */}
             <div className="flex items-center space-x-4">
-              <span className="text-gray-400 font-poppins text-sm">{t('followUs')}:</span>
+              <span className="text-gray-400 font-body text-sm">{t('followUs')}:</span>
               
               {/* WhatsApp */}
               <a 
@@ -139,7 +139,7 @@ const Footer = () => {
             </div>
 
             {/* Copyright */}
-            <div className="text-gray-400 font-poppins text-sm">
+            <div className="text-gray-400 font-body text-sm">
               © {new Date().getFullYear()} Super Feo Express. {t('allRightsReserved')}.
             </div>
           </div>

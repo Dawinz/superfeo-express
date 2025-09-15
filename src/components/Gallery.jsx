@@ -39,10 +39,10 @@ const Gallery = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Gallery Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bebas font-bold text-white mb-4 tracking-wide">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4 tracking-wide">
             {t('ourFleet')}
           </h2>
-          <p className="text-lg text-kisesa-white font-poppins max-w-2xl mx-auto">
+          <p className="text-lg text-kisesa-white font-body max-w-2xl mx-auto">
             {t('fleetDescription')}
           </p>
         </div>
@@ -66,10 +66,10 @@ const Gallery = () => {
               {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-kisesa-navy/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4 right-4">
-                  <h3 className="text-white font-bebas font-bold text-xl tracking-wide">
+                  <h3 className="text-white font-heading font-bold text-xl tracking-wide">
                     {image.title}
                   </h3>
-                  <div className="flex items-center text-white/80 text-sm font-poppins">
+                  <div className="flex items-center text-white/80 text-sm font-body">
                     <svg className="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
@@ -106,10 +106,10 @@ const Gallery = () => {
               {/* Image Title */}
               <div className="absolute bottom-4 left-4 right-4 text-center">
                 <div className="bg-black/60 backdrop-blur-sm rounded-lg p-4">
-                  <h3 className="text-white font-bebas font-bold text-2xl tracking-wide">
+                  <h3 className="text-white font-heading font-bold text-2xl tracking-wide">
                     {selectedImage.title}
                   </h3>
-                  <p className="text-white/80 font-poppins text-sm mt-1">
+                  <p className="text-white/80 font-body text-sm mt-1">
                     {selectedImage.alt}
                   </p>
                 </div>

@@ -60,10 +60,10 @@ const Routes = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-bebas font-bold text-kisesa-blue mb-4 tracking-wide">
+          <h1 className="text-4xl md:text-5xl font-heading font-bold text-kisesa-blue mb-4 tracking-wide">
             {t('ourRoutes')}
           </h1>
-          <p className="text-lg text-gray-600 font-poppins max-w-2xl mx-auto">
+          <p className="text-lg text-gray-600 font-body max-w-2xl mx-auto">
             {t('routesDesc')}
           </p>
         </div>
@@ -78,31 +78,31 @@ const Routes = () => {
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center space-x-2">
                   <div className="w-3 h-3 bg-kisesa-orange rounded-full"></div>
-                  <span className="font-poppins font-semibold text-gray-800">{route.from}</span>
+                  <span className="font-body font-semibold text-gray-800">{route.from}</span>
                 </div>
                 <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
                 </svg>
                 <div className="flex items-center space-x-2">
-                  <span className="font-poppins font-semibold text-gray-800">{route.to}</span>
+                  <span className="font-body font-semibold text-gray-800">{route.to}</span>
                   <div className="w-3 h-3 bg-kisesa-orange rounded-full"></div>
                 </div>
               </div>
 
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
-                  <span className="text-sm font-poppins text-gray-600">{t('price')}</span>
-                  <span className="text-lg font-bebas font-bold text-kisesa-orange">{route.price}</span>
+                  <span className="text-sm font-body text-gray-600">{t('price')}</span>
+                  <span className="text-lg font-heading font-bold text-kisesa-orange">{route.price}</span>
                 </div>
                 <div className="flex justify-between items-center">
-                  <span className="text-sm font-poppins text-gray-600">{t('duration')}</span>
-                  <span className="text-sm font-poppins font-semibold text-gray-800">{route.duration}</span>
+                  <span className="text-sm font-body text-gray-600">{t('duration')}</span>
+                  <span className="text-sm font-body font-semibold text-gray-800">{route.duration}</span>
                 </div>
               </div>
 
               <button 
                 onClick={() => handleBookRoute(route)}
-                className="w-full mt-4 bg-kisesa-yellow hover:bg-yellow-500 text-kisesa-blue font-poppins font-bold py-3 px-4 rounded-lg transition-colors duration-200"
+                className="w-full mt-4 bg-kisesa-yellow hover:bg-yellow-500 text-kisesa-blue font-body font-bold py-3 px-4 rounded-lg transition-colors duration-200"
               >
                 {t('bookThisRoute')}
               </button>
@@ -112,21 +112,21 @@ const Routes = () => {
 
         {/* Additional Info */}
         <div className="mt-16 bg-white rounded-xl shadow-lg p-8">
-          <h2 className="text-2xl font-bebas font-bold text-kisesa-navy mb-6 tracking-wide text-center">
+          <h2 className="text-2xl font-heading font-bold text-kisesa-navy mb-6 tracking-wide text-center">
             ROUTE INFORMATION
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-lg font-bebas font-bold text-gray-800 mb-3">{t('departureTimes')}</h3>
-              <ul className="space-y-2 font-poppins text-gray-600">
+              <h3 className="text-lg font-heading font-bold text-gray-800 mb-3">{t('departureTimes')}</h3>
+              <ul className="space-y-2 font-body text-gray-600">
                 <li>• {t('morningTime')}</li>
                 <li>• {t('afternoonTime')}</li>
                 <li>• {t('eveningTime')}</li>
               </ul>
             </div>
             <div>
-              <h3 className="text-lg font-bebas font-bold text-gray-800 mb-3">{t('amenities')}</h3>
-              <ul className="space-y-2 font-poppins text-gray-600">
+              <h3 className="text-lg font-heading font-bold text-gray-800 mb-3">{t('amenities')}</h3>
+              <ul className="space-y-2 font-body text-gray-600">
                 <li>• {t('airConditioning')}</li>
                 <li>• {t('comfortableSeats')}</li>
                 <li>• {t('freeWifi')}</li>
