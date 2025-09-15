@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import SafariYetuScrollManager from '../utils/safariYetuScrollManager';
-import SafariYetuOverlay from '../components/SafariYetuOverlay';
 
 const Book = () => {
   const [selectedSeats, setSelectedSeats] = useState([]);
@@ -8,7 +7,6 @@ const Book = () => {
   const [pickupStation, setPickupStation] = useState('');
   const [dropOffStation, setDropOffStation] = useState('');
   const [isBookingDialogOpen, setIsBookingDialogOpen] = useState(false);
-  const [currentBookingData, setCurrentBookingData] = useState({});
   const scrollManagerRef = useRef(null);
 
   // Cleanup scroll manager on component unmount
@@ -152,7 +150,6 @@ const Book = () => {
   };
 
   // Show overlay instead of completely replacing the UI
-  const showOverlay = isBookingDialogOpen;
 
   return (
     <div className="min-h-screen bg-gray-50 py-8">
@@ -374,7 +371,7 @@ const Book = () => {
       
       {/* SafariYetu Overlay */}
       {/* <SafariYetuOverlay 
-        isOpen={showOverlay} 
+        isOpen={isBookingDialogOpen} 
         bookingData={currentBookingData}
       /> */}
     </div>

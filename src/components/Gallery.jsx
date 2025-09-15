@@ -8,20 +8,20 @@ const Gallery = () => {
   const images = [
     {
       id: 1,
-      src: '/images/kisesa-2.jpg',
-      alt: 'Kisesa Express Bus - Modern Fleet',
+      src: '/images/superfeo-bus-1.jpg',
+      alt: 'Super Feo Express Bus - Modern Fleet',
       title: 'Premium Fleet'
     },
     {
       id: 2,
-      src: '/images/kisesa-3.jpg',
-      alt: 'Kisesa Express Bus - Front View with Route Destinations',
+      src: '/images/superfeo-bus-2.jpg',
+      alt: 'Super Feo Express Bus - Front View with Route Destinations',
       title: 'Modern Buses'
     },
     {
       id: 3,
-      src: '/images/kisesa-4.jpg',
-      alt: 'Kisesa Express Bus - Professional Service',
+      src: '/images/superfeo-bus-3.jpg',
+      alt: 'Super Feo Express Bus - Professional Service',
       title: 'Reliable Service'
     }
   ];

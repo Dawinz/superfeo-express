@@ -41,7 +41,6 @@ export const LanguageProvider = ({ children }) => {
         selectDeparture: 'Select departure',
         selectDestination: 'Select destination',
         passenger: 'Passenger',
-        passengers: 'Passengers',
         
         // Popular Routes
         popularRoutes: 'Popular Routes:',
@@ -92,7 +91,6 @@ export const LanguageProvider = ({ children }) => {
         modernFleet: 'Modern Fleet',
         comfortableInterior: 'Comfortable Interior',
         professionalService: 'Professional Service',
-        safeTravel: 'Safe Travel',
         premiumExperience: 'Premium Experience',
         onTheRoad: 'On the Road',
         atTheTerminal: 'At the Terminal',
@@ -131,7 +129,6 @@ export const LanguageProvider = ({ children }) => {
         whyChooseKisesaExpress: 'WHY CHOOSE SUPER FEO EXPRESS',
         premiumComfortDesc: 'Luxury seats, air conditioning, and spacious interiors for your comfort',
         onTimeDepartureDesc: 'Reliable schedules and punctual service you can depend on',
-        safeTravelDesc: 'Professional drivers and well-maintained vehicles for your safety',
         
         // Contact specific
         simu: 'PHONE',
@@ -153,7 +150,6 @@ export const LanguageProvider = ({ children }) => {
         experienceDifference: 'Experience the difference with our premium bus services',
         
         // Routes specific
-        departureTimes: 'DEPARTURE TIMES',
         amenities: 'AMENITIES',
         
         // Cities
@@ -170,7 +166,6 @@ export const LanguageProvider = ({ children }) => {
         footerDescription: 'We are dedicated and committed company to run passenger transportation with over 15 years of experience in industry, covering all major route from southern to northern part of the Tanzania country. Due to the having enough buses running in the roads in many major ways from different areas and enough reserved buses partnering with yutong and Scania we guarantee no passenger will left behind without travelling.',
         quickLinks: 'QUICK LINKS',
         contactInfo: 'CONTACT INFO',
-        phone: 'Phone',
         headOffice: 'Head Office',
         headOfficeLocation: 'Dar es Salaam, Tanzania',
         followUs: 'Follow Us',
@@ -206,7 +201,6 @@ export const LanguageProvider = ({ children }) => {
         selectDeparture: 'Chagua mahali pa kuondoka',
         selectDestination: 'Chagua mahali pa kwenda',
         passenger: 'Mtu',
-        passengers: 'Watu',
         
         // Popular Routes
         popularRoutes: 'Njia Maarufu:',
@@ -257,7 +251,6 @@ export const LanguageProvider = ({ children }) => {
         modernFleet: 'Magari ya Kisasa',
         comfortableInterior: 'Ndani Yenye Ustarehe',
         professionalService: 'Huduma ya Kitaalam',
-        safeTravel: 'Usafiri Salama',
         premiumExperience: 'Uzoefu wa Kilasi',
         onTheRoad: 'Barabarani',
         atTheTerminal: 'Kwenye Kituo',
@@ -296,7 +289,6 @@ export const LanguageProvider = ({ children }) => {
         whyChooseKisesaExpress: 'KWA NINI UCHAGUE SUPER FEO EXPRESS',
         premiumComfortDesc: 'Viti vya kifahari, hewa baridi, na mazingira mazuri ya ustarehe',
         onTimeDepartureDesc: 'Ratiba za kuaminika na huduma ya wakati unayoweza kutegemea',
-        safeTravelDesc: 'Madereva wataalam na magari yaliyotunzwa vizuri kwa usalama wako',
         
         // Contact specific  
         simu: 'SIMU',
@@ -318,7 +310,6 @@ export const LanguageProvider = ({ children }) => {
         experienceDifference: 'Furahia tofauti na huduma zetu za kilasi za mabasi',
         
         // Routes specific
-        departureTimes: 'MUDA WA KUONDOKA',
         amenities: 'VIFAA',
         
         // Cities
@@ -335,7 +326,6 @@ export const LanguageProvider = ({ children }) => {
         footerDescription: 'Tunajitolea na kujitolea kwa kampuni ya kusafirisha abiria na uzoefu wa zaidi ya miaka 15 katika tasnia, kufunika njia zote kuu kutoka kusini hadi kaskazini mwa nchi ya Tanzania. Kwa sababu ya kuwa na mabasi ya kutosha yanayotembea barabarani kwa njia nyingi kuu kutoka maeneo mbalimbali na mabasi ya kutosha yaliyohifadhiwa kwa kushirikiana na yutong na Scania tunahakikisha hakuna abiria atabaki nyuma bila kusafiri.',
         quickLinks: 'VIUNGO VYA HARAKA',
         contactInfo: 'MAELEZO YA MAWASILIANO',
-        phone: 'Simu',
         headOffice: 'Makao Makuu',
         headOfficeLocation: 'Dar es Salaam, Tanzania',
         followUs: 'Tufuate',

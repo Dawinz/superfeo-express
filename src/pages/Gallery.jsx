@@ -8,75 +8,99 @@ const Gallery = () => {
   const images = [
     {
       id: 1,
-      src: '/images/kisesa-2.jpg',
-      alt: 'Kisesa Express Bus - Modern Fleet',
+      src: '/images/superfeo-bus-1.jpg',
+      alt: 'Super Feo Express Bus - Modern Fleet',
       title: t('modernFleet')
     },
     {
       id: 2,
-      src: '/images/kisesa-3.jpg',
-      alt: 'Kisesa Express Bus - Comfortable Interior',
+      src: '/images/superfeo-bus-2.jpg',
+      alt: 'Super Feo Express Bus - Comfortable Interior',
       title: t('comfortableInterior')
     },
     {
       id: 3,
-      src: '/images/kisesa-4.jpg',
-      alt: 'Kisesa Express Bus - Professional Service',
+      src: '/images/superfeo-bus-3.jpg',
+      alt: 'Super Feo Express Bus - Professional Service',
       title: t('professionalService')
     },
     {
       id: 4,
-      src: '/images/kisesa-5.jpg',
-      alt: 'Kisesa Express Bus - Safe Travel',
+      src: '/images/superfeo-bus-4.jpg',
+      alt: 'Super Feo Express Bus - Safe Travel',
       title: t('safeTravel')
     },
     {
       id: 5,
-      src: '/images/kisesa-6.jpg',
-      alt: 'Kisesa Express Bus - Premium Experience',
+      src: '/images/superfeo-bus-5.jpg',
+      alt: 'Super Feo Express Bus - Premium Experience',
       title: t('premiumExperience')
     },
     {
       id: 6,
-      src: '/images/kisesa-7.png',
-      alt: 'Kisesa Express Bus - On the Road',
+      src: '/images/superfeo-bus-6.jpg',
+      alt: 'Super Feo Express Bus - On the Road',
       title: t('onTheRoad')
     },
     {
       id: 7,
-      src: '/images/kisesa-7-mobile.png',
-      alt: 'Kisesa Express Bus - Mobile View',
+      src: '/images/superfeo-bus-7.jpg',
+      alt: 'Super Feo Express Bus - Mobile View',
       title: t('mobileView')
     },
     {
       id: 8,
-      src: '/images/kisesa-8.jpg',
-      alt: 'Kisesa Express Bus - Terminal',
+      src: '/images/superfeo-bus-8.jpg',
+      alt: 'Super Feo Express Bus - Terminal',
       title: t('atTheTerminal')
     },
     {
       id: 9,
-      src: '/images/kisesa one.jpeg',
-      alt: 'Kisesa Express Bus - Fleet One',
+      src: '/images/superfeo-bus-9.jpg',
+      alt: 'Super Feo Express Bus - Fleet One',
       title: t('fleetOne')
     },
     {
       id: 10,
-      src: '/images/kisesa two.jpeg',
-      alt: 'Kisesa Express Bus - Fleet Two',
+      src: '/images/superfeo-bus-10.jpg',
+      alt: 'Super Feo Express Bus - Fleet Two',
       title: t('fleetTwo')
     },
     {
       id: 11,
-      src: '/images/kisesa three.jpeg',
-      alt: 'Kisesa Express Bus - Fleet Three',
+      src: '/images/superfeo-bus-11.jpg',
+      alt: 'Super Feo Express Bus - Fleet Three',
       title: t('fleetThree')
     },
     {
       id: 12,
-      src: '/images/kisesa four.jpeg',
-      alt: 'Kisesa Express Bus - Fleet Four',
+      src: '/images/superfeo-bus-12.jpg',
+      alt: 'Super Feo Express Bus - Fleet Four',
       title: t('fleetFour')
+    },
+    {
+      id: 13,
+      src: '/images/superfeo-whatsapp-1.jpg',
+      alt: 'Super Feo Express Bus - WhatsApp Gallery',
+      title: 'WhatsApp Gallery'
+    },
+    {
+      id: 14,
+      src: '/images/superfeo-whatsapp-2.jpg',
+      alt: 'Super Feo Express Bus - Customer Service',
+      title: 'Customer Service'
+    },
+    {
+      id: 15,
+      src: '/images/superfeo-whatsapp-3.jpg',
+      alt: 'Super Feo Express Bus - Professional Team',
+      title: 'Professional Team'
+    },
+    {
+      id: 16,
+      src: '/images/superfeo-edited-1.jpg',
+      alt: 'Super Feo Express Bus - Edited Gallery',
+      title: 'Edited Gallery'
     }
   ];
 

@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import SafariYetuScrollManager from '../utils/safariYetuScrollManager';
-import SafariYetuOverlay from './SafariYetuOverlay';
 import { useLanguage } from '../contexts/LanguageContext';
 
 const SearchForm = ({ setIsBookingDialogOpen }) => {
@@ -13,7 +12,6 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
   });
   const [isLoading, setIsLoading] = useState(false);
   const [error, setError] = useState('');
-  const [currentBookingData, setCurrentBookingData] = useState({});
   const scrollManagerRef = useRef(null);
 
   // Read URL parameters and pre-fill form
@@ -107,7 +105,6 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
           console.log('SafariYetu dialog closed via callback');
           setIsBookingDialogOpen(false);
           setIsLoading(false);
-          setCurrentBookingData({});
           setError(''); // Suppress any error when closing the panel
         }
       };
@@ -116,7 +113,6 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
       scrollManagerRef.current = SafariYetuScrollManager.createInstance();
       setIsLoading(true);
       setIsBookingDialogOpen(true); // <-- show blur on app
-      setCurrentBookingData(bookingData);
 
       // Check if SafariPlus is loaded, handle development vs production
       if (typeof window.safariplus === 'undefined') {
@@ -134,7 +130,6 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
             }
             setIsLoading(false);
             setIsBookingDialogOpen(false); // <-- remove blur on app
-            setCurrentBookingData({});
           }, 1500);
           return;
         } else {
@@ -161,7 +156,6 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
       }
       setIsLoading(false);
       setIsBookingDialogOpen(false); // <-- remove blur on app
-      setCurrentBookingData({});
     }
   };
 
@@ -191,8 +185,6 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
     { value: 'tabora', label: 'TABORA' }
   ];
 
-  // Show overlay instead of hiding the form completely
-  const showOverlay = setIsBookingDialogOpen;
 
   return (
     <div>
