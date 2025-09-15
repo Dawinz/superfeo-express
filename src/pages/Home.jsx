@@ -7,7 +7,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 const Home = ({ setIsBookingDialogOpen }) => {
   const { t } = useLanguage();
   return (
-    <div className="min-h-screen bg-superfeo-red">
+    <div className="min-h-screen bg-superfeo-pink">
       {/* Hero Section with Overlay Form on Mobile */}
       <section className="relative">
         <Hero />

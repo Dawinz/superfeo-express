@@ -5,7 +5,7 @@ import { useLanguage } from '../contexts/LanguageContext';
 const Footer = () => {
   const { t } = useLanguage();
   return (
-    <footer className="bg-superfeo-red text-superfeo-white py-10">
+    <footer className="bg-superfeo-pink text-superfeo-white py-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Main Footer Content */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-8">

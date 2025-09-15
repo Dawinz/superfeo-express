@@ -39,7 +39,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="bg-superfeo-red text-superfeo-white shadow-lg sticky top-0 z-50">
+    <nav className="bg-superfeo-pink text-superfeo-white shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -137,7 +137,7 @@ const Navbar = () => {
 
         {/* Mobile Menu */}
         <div className={`md:hidden transition-all duration-300 ease-in-out ${isMenuOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'}`}>
-          <div className="px-2 pt-2 pb-3 space-y-1 bg-superfeo-red border-t border-superfeo-white">
+          <div className="px-2 pt-2 pb-3 space-y-1 bg-superfeo-pink border-t border-superfeo-white">
             <Link
               to="/"
               className="block px-3 py-3 rounded-md text-base font-poppins font-medium text-superfeo-white hover:text-superfeo-gold hover:bg-superfeo-white hover:bg-opacity-10 transition-colors duration-200"

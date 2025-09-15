@@ -189,7 +189,7 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
   return (
     <div>
       <div>
-          <div id="search-form" className="bg-gradient-to-br from-superfeo-red via-superfeo-gold to-superfeo-white rounded-xl shadow-2xl shadow-superfeo-red/40 p-2 sm:p-3 md:p-4 mx-1 md:-mt-16 relative z-20 md:mx-2 sm:mx-4">
+          <div id="search-form" className="bg-gradient-to-br from-superfeo-pink via-superfeo-gold to-superfeo-white rounded-xl shadow-2xl shadow-superfeo-pink/40 p-2 sm:p-3 md:p-4 mx-1 md:-mt-16 relative z-20 md:mx-2 sm:mx-4">
             <div className="max-w-6xl mx-auto w-full max-w-xs sm:max-w-lg md:max-w-4xl">
               {/* Form Header */}
               <div className="text-center mb-1 sm:mb-2">
@@ -332,7 +332,7 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
                         setError('');
                       }}
                       disabled={isLoading}
-                      className="text-2xs sm:text-xs bg-gray-100 hover:bg-superfeo-red hover:text-white text-gray-700 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full font-poppins transition-colors duration-200 disabled:opacity-50"
+                      className="text-2xs sm:text-xs bg-gray-100 hover:bg-superfeo-pink hover:text-white text-gray-700 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full font-poppins transition-colors duration-200 disabled:opacity-50"
                     >
                       {route}
                     </button>
