@@ -6,7 +6,7 @@ const Book = () => {
   const [isLoading, setIsLoading] = useState(false);
   const [pickupStation, setPickupStation] = useState('');
   const [dropOffStation, setDropOffStation] = useState('');
-  const [isBookingDialogOpen, setIsBookingDialogOpen] = useState(false);
+  const [, setIsBookingDialogOpen] = useState(false);
   const scrollManagerRef = useRef(null);
 
   // Cleanup scroll manager on component unmount
@@ -87,7 +87,6 @@ const Book = () => {
           console.log('SafariYetu payment dialog closed via callback');
           setIsLoading(false);
           setIsBookingDialogOpen(false);
-          setCurrentBookingData({});
         }
       };
 
@@ -95,7 +94,6 @@ const Book = () => {
       scrollManagerRef.current = SafariYetuScrollManager.createInstance();
       setIsLoading(true);
       setIsBookingDialogOpen(true);
-      setCurrentBookingData(bookingData);
 
       // Check if SafariPlus is loaded, handle development vs production
       if (typeof window.safariplus === 'undefined') {
@@ -113,7 +111,6 @@ const Book = () => {
             }
             setIsLoading(false);
             setIsBookingDialogOpen(false);
-            setCurrentBookingData({});
           }, 2000);
           return;
         } else {
@@ -135,7 +132,6 @@ const Book = () => {
       }
       setIsLoading(false);
       setIsBookingDialogOpen(false);
-      setCurrentBookingData({});
     }
   };
 
