@@ -49,7 +49,7 @@ const Navbar = () => {
               className="text-xl font-bebas font-bold tracking-wider hover:text-kisesa-yellow transition-colors duration-200"
               onClick={closeMenu}
             >
-              KISESA EXPRESS
+              SUPER FEO EXPRESS
             </Link>
           </div>
 
@@ -90,15 +90,7 @@ const Navbar = () => {
                 <span className="text-sm">{language === 'en' ? 'SW' : 'EN'}</span>
               </button>
               <a
-                href="https://zuberiexpress.co.tz/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="bg-blue-800 hover:bg-blue-900 text-white px-4 py-2 rounded-lg font-poppins font-semibold transition-colors duration-200"
-              >
-                ZUBERI EXPRESS
-              </a>
-              <a
-                href="https://wa.me/255789456321"
+                href="https://wa.me/255629202626"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg font-poppins font-semibold transition-colors duration-200"
@@ -187,16 +179,7 @@ const Navbar = () => {
             </button>
             <div className="px-3 py-2 space-y-2">
               <a
-                href="https://zuberiexpress.co.tz/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="block w-full text-center px-4 py-3 bg-blue-800 hover:bg-blue-900 text-white font-poppins font-semibold rounded-lg transition-colors duration-200"
-                onClick={closeMenu}
-              >
-                ZUBERI EXPRESS
-              </a>
-              <a
-                href="https://wa.me/255789456321"
+                href="https://wa.me/255629202626"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="block w-full text-center px-4 py-3 bg-green-500 hover:bg-green-600 text-white font-poppins font-semibold rounded-lg transition-colors duration-200"

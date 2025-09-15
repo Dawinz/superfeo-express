@@ -165,15 +165,30 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
     }
   };
 
-  // Limited routes for Kisesa Express
+  // Super Feo Express destinations
   const popularRoutes = [
-    { value: 'mwanza', label: t('mwanza') },
-    { value: 'dar-es-salaam', label: t('darEsSalaam') },
-    { value: 'kahama', label: t('kahama') },
-    { value: 'moshi', label: t('moshi') },
-    { value: 'shinyanga', label: t('shinyanga') },
-    { value: 'arusha', label: t('arusha') },
-    { value: 'singida', label: t('singida') }
+    { value: 'dar-es-salaam', label: 'DAR ES SALAAM' },
+    { value: 'dodoma', label: 'DODOMA' },
+    { value: 'mbeya', label: 'MBEYA' },
+    { value: 'songea', label: 'SONGEA' },
+    { value: 'njombe', label: 'NJOMBE' },
+    { value: 'makambako', label: 'MAKAMBAKO' },
+    { value: 'iringa', label: 'IRINGA' },
+    { value: 'tunduma', label: 'TUNDUMA' },
+    { value: 'mafinga', label: 'MAFINGA' },
+    { value: 'namtumbo', label: 'NAMTUMBO' },
+    { value: 'masasi', label: 'MASASI' },
+    { value: 'tunduru', label: 'TUNDURU' },
+    { value: 'mtwara', label: 'MTWARA' },
+    { value: 'lindi', label: 'LINDI' },
+    { value: 'nyasa', label: 'NYASA' },
+    { value: 'mbinga', label: 'MBINGA' },
+    { value: 'peramiho', label: 'PERAMIHO' },
+    { value: 'kilimanjaro', label: 'KILIMANJARO' },
+    { value: 'arusha', label: 'ARUSHA' },
+    { value: 'moshi', label: 'MOSHI' },
+    { value: 'mwanza', label: 'MWANZA' },
+    { value: 'tabora', label: 'TABORA' }
   ];
 
   // Show overlay instead of hiding the form completely
@@ -309,9 +324,9 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
                 <p className="text-2xs sm:text-xs font-poppins text-white mb-1 sm:mb-1.5">{t('popularRoutes')}</p>
                 <div className="flex flex-wrap justify-center items-center gap-0.5 sm:gap-1 mx-auto w-fit">
                   {[
-                    { route: 'Mwanza - Dar es Salaam', from: 'mwanza', to: 'dar-es-salaam' },
-                    { route: 'Dar es Salaam - Mwanza', from: 'dar-es-salaam', to: 'mwanza' },
-                    { route: 'Mwanza - Kahama', from: 'mwanza', to: 'kahama' }
+                    { route: 'Dar es Salaam - Dodoma', from: 'dar-es-salaam', to: 'dodoma' },
+                    { route: 'Dar es Salaam - Mbeya', from: 'dar-es-salaam', to: 'mbeya' },
+                    { route: 'Dar es Salaam - Arusha', from: 'dar-es-salaam', to: 'arusha' }
                   ].map(({ route, from, to }) => (
                     <button
                       key={route}

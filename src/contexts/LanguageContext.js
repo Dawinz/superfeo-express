@@ -47,7 +47,7 @@ export const LanguageProvider = ({ children }) => {
         popularRoutes: 'Popular Routes:',
         
         // Features
-        whyChoose: 'WHY CHOOSE KISESA EXPRESS',
+        whyChoose: 'WHY CHOOSE SUPER FEO EXPRESS',
         premiumComfort: 'PREMIUM COMFORT',
         comfortDesc: 'Luxury seats, air conditioning, and spacious interiors for your comfort',
         onTimeDeparture: 'ON-TIME DEPARTURE',
@@ -86,7 +86,7 @@ export const LanguageProvider = ({ children }) => {
         
         // Gallery
         ourGallery: 'OUR GALLERY',
-        galleryDesc: 'Take a look at our modern fleet of buses and experience the comfort and luxury of traveling with Kisesa Express',
+        galleryDesc: 'Take a look at our modern fleet of buses and experience the comfort and luxury of traveling with Super Feo Express',
         ourFleet: 'OUR FLEET',
         fleetDescription: 'Experience comfort and luxury with our modern fleet of buses',
         modernFleet: 'Modern Fleet',
@@ -128,7 +128,7 @@ export const LanguageProvider = ({ children }) => {
         fleetThree: 'Fleet Three',
         fleetFour: 'Fleet Four',
         mobileView: 'Mobile View',
-        whyChooseKisesaExpress: 'WHY CHOOSE KISESA EXPRESS',
+        whyChooseKisesaExpress: 'WHY CHOOSE SUPER FEO EXPRESS',
         premiumComfortDesc: 'Luxury seats, air conditioning, and spacious interiors for your comfort',
         onTimeDepartureDesc: 'Reliable schedules and punctual service you can depend on',
         safeTravelDesc: 'Professional drivers and well-maintained vehicles for your safety',
@@ -166,13 +166,13 @@ export const LanguageProvider = ({ children }) => {
         singida: 'SINGIDA SGD',
         
         // Footer
-        footerTagline: 'Premium Travel, Easy Booking',
-        footerDescription: 'Experience premium bus travel across Tanzania with our modern fleet, professional drivers, and exceptional service. Your comfort and safety are our top priorities.',
+        footerTagline: 'Feel the freedom of traveling',
+        footerDescription: 'We are dedicated and committed company to run passenger transportation with over 15 years of experience in industry, covering all major route from southern to northern part of the Tanzania country. Due to the having enough buses running in the roads in many major ways from different areas and enough reserved buses partnering with yutong and Scania we guarantee no passenger will left behind without travelling.',
         quickLinks: 'QUICK LINKS',
         contactInfo: 'CONTACT INFO',
         phone: 'Phone',
         headOffice: 'Head Office',
-        headOfficeLocation: 'Nata, Mwanza',
+        headOfficeLocation: 'Dar es Salaam, Tanzania',
         followUs: 'Follow Us',
         allRightsReserved: 'All rights reserved',
         bookNow: 'Book Now',
@@ -212,7 +212,7 @@ export const LanguageProvider = ({ children }) => {
         popularRoutes: 'Njia Maarufu:',
         
         // Features
-        whyChoose: 'KWA NINI UCHAGUE KISESA EXPRESS',
+        whyChoose: 'KWA NINI UCHAGUE SUPER FEO EXPRESS',
         premiumComfort: 'USTAREHE WA KILASI',
         comfortDesc: 'Viti vya kifahari, hewa baridi, na mazingira mazuri ya ustarehe',
         onTimeDeparture: 'KUONDOKA KWA WAKATI',
@@ -251,7 +251,7 @@ export const LanguageProvider = ({ children }) => {
         
         // Gallery
         ourGallery: 'PICHA ZETU',
-        galleryDesc: 'Angalia gari zetu za kisasa na ujaribu ustarehe na anasa ya kusafiri na Kisesa Express',
+        galleryDesc: 'Angalia gari zetu za kisasa na ujaribu ustarehe na anasa ya kusafiri na Super Feo Express',
         ourFleet: 'MAGARI YETU',
         fleetDescription: 'Furahia ustarehe na anasa na magari yetu ya kisasa',
         modernFleet: 'Magari ya Kisasa',
@@ -293,7 +293,7 @@ export const LanguageProvider = ({ children }) => {
         fleetThree: 'Gari la Tatu', 
         fleetFour: 'Gari la Nne',
         mobileView: 'Mwonekano wa Simu',
-        whyChooseKisesaExpress: 'KWA NINI UCHAGUE KISESA EXPRESS',
+        whyChooseKisesaExpress: 'KWA NINI UCHAGUE SUPER FEO EXPRESS',
         premiumComfortDesc: 'Viti vya kifahari, hewa baridi, na mazingira mazuri ya ustarehe',
         onTimeDepartureDesc: 'Ratiba za kuaminika na huduma ya wakati unayoweza kutegemea',
         safeTravelDesc: 'Madereva wataalam na magari yaliyotunzwa vizuri kwa usalama wako',
@@ -331,13 +331,13 @@ export const LanguageProvider = ({ children }) => {
         singida: 'SINGIDA SGD',
         
         // Footer
-        footerTagline: 'Safari za Kifahari, Tiketi kwa Urahisi',
-        footerDescription: 'Furahia safari za kifahari kote Tanzania na mabasi yetu ya kisasa, madereva wataalam, na huduma bora. Ustarehe na usalama wako ni vipaumbele vyetu.',
+        footerTagline: 'Furahia uhuru wa kusafiri',
+        footerDescription: 'Tunajitolea na kujitolea kwa kampuni ya kusafirisha abiria na uzoefu wa zaidi ya miaka 15 katika tasnia, kufunika njia zote kuu kutoka kusini hadi kaskazini mwa nchi ya Tanzania. Kwa sababu ya kuwa na mabasi ya kutosha yanayotembea barabarani kwa njia nyingi kuu kutoka maeneo mbalimbali na mabasi ya kutosha yaliyohifadhiwa kwa kushirikiana na yutong na Scania tunahakikisha hakuna abiria atabaki nyuma bila kusafiri.',
         quickLinks: 'VIUNGO VYA HARAKA',
         contactInfo: 'MAELEZO YA MAWASILIANO',
         phone: 'Simu',
         headOffice: 'Makao Makuu',
-        headOfficeLocation: 'Nata, Mwanza',
+        headOfficeLocation: 'Dar es Salaam, Tanzania',
         followUs: 'Tufuate',
         allRightsReserved: 'Haki zote zimehifadhiwa',
         bookNow: 'Book Sasa',

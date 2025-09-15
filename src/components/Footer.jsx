@@ -13,7 +13,7 @@ const Footer = () => {
           {/* Company Info Section */}
           <div className="lg:col-span-2">
             <h3 className="text-2xl font-bebas font-bold mb-4 tracking-wide">
-              KISESA EXPRESS
+              SUPER FEO EXPRESS
             </h3>
             <p className="text-gray-300 font-poppins mb-4 text-lg">
               {t('footerTagline')}
@@ -65,11 +65,7 @@ const Footer = () => {
                 </svg>
                 <div className="text-gray-300">
                   <div className="font-semibold mb-1">{t('phone')}:</div>
-                  <a href="tel:+255755478744" className="hover:text-white transition-colors duration-200 block">Mwanza: +255 755 478 744</a>
-                  <a href="tel:+255767350884" className="hover:text-white transition-colors duration-200 block">Mwanza: +255 767 350 884</a>
-                  <a href="tel:+255654946844" className="hover:text-white transition-colors duration-200 block">Dar: +255 654 946 844</a>
-                  <a href="tel:+255757748040" className="hover:text-white transition-colors duration-200 block">Arusha: +255 757 748 040</a>
-                  <a href="tel:+255757258844" className="hover:text-white transition-colors duration-200 block">Moshi: +255 757 258 844</a>
+                  <a href="tel:+255629202626" className="hover:text-white transition-colors duration-200 block">+255 629 202 626</a>
                 </div>
               </div>
               
@@ -78,8 +74,8 @@ const Footer = () => {
                 <svg className="w-4 h-4 text-kisesa-yellow flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 7.89a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                 </svg>
-                <a href="mailto:support@kisesa.co.tz" className="text-gray-300 hover:text-white transition-colors duration-200">
-                  support@kisesa.co.tz
+                <a href="mailto:booking@superfeoexpress.co.tz" className="text-gray-300 hover:text-white transition-colors duration-200">
+                  booking@superfeoexpress.co.tz
                 </a>
               </div>
               
@@ -90,7 +86,7 @@ const Footer = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                 </svg>
                 <span className="text-gray-300">
-                  {t('headOffice')}: {t('headOfficeLocation')}
+                  {t('headOffice')}: Dar es Salaam, Tanzania
                 </span>
               </div>
             </div>
@@ -107,7 +103,7 @@ const Footer = () => {
               
               {/* WhatsApp */}
               <a 
-                href="https://wa.me/255755478744" 
+                href="https://wa.me/255629202626" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-green-500 hover:bg-green-600 text-white p-2 rounded-full transition-colors duration-200"
@@ -119,7 +115,7 @@ const Footer = () => {
               
               {/* Facebook */}
               <a 
-                href="https://facebook.com/kisesaexpress" 
+                href="https://facebook.com/superfeoexpress" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-blue-600 hover:bg-blue-700 text-white p-2 rounded-full transition-colors duration-200"
@@ -131,7 +127,7 @@ const Footer = () => {
               
               {/* Instagram */}
               <a 
-                href="https://instagram.com/kisesaexpress" 
+                href="https://instagram.com/superfeoexpress" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white p-2 rounded-full transition-colors duration-200"
@@ -144,7 +140,7 @@ const Footer = () => {
 
             {/* Copyright */}
             <div className="text-gray-400 font-poppins text-sm">
-              © {new Date().getFullYear()} Kisesa Express. {t('allRightsReserved')}.
+              © {new Date().getFullYear()} Super Feo Express. {t('allRightsReserved')}.
             </div>
           </div>
         </div>
