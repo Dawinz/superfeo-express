@@ -31,56 +31,56 @@ const Home = ({ setIsBookingDialogOpen }) => {
         </div>
       </section>
       {/* Features Section */}
-      <section className="py-8 bg-superfeo-gray mt-8">
+      <section className="py-16 bg-white mt-8">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-6">
-            <h2 className="text-3xl md:text-4xl font-heading font-bold text-superfeo-white mb-4 tracking-wide">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-heading font-bold text-superfeo-pink mb-4 tracking-wide">
               {t('whyChoose')}
             </h2>
-            <p className="text-lg text-superfeo-white font-body max-w-2xl mx-auto">
+            <p className="text-lg text-superfeo-darkgray font-body max-w-2xl mx-auto">
               {t('experienceDifference')}
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {/* Feature 1 */}
-            <div className="text-center p-6 rounded-lg bg-white border border-kisesa-gray hover:shadow-lg transition-shadow duration-200">
-              <div className="w-16 h-16 bg-kisesa-yellow rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center p-8 rounded-lg bg-white border border-superfeo-lightpink hover:shadow-xl hover:border-superfeo-pink transition-all duration-300">
+              <div className="w-16 h-16 bg-superfeo-pink rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-bebas font-bold text-kisesa-blue mb-2 tracking-wide">
+              <h3 className="text-xl font-heading font-bold text-superfeo-pink mb-3 tracking-wide">
                 {t('premiumComfort')}
               </h3>
-              <p className="text-kisesa-blue font-poppins">
+              <p className="text-superfeo-darkgray font-body leading-relaxed">
                 {t('comfortDesc')}
               </p>
             </div>
             {/* Feature 2 */}
-            <div className="text-center p-6 rounded-lg bg-white border border-kisesa-gray hover:shadow-lg transition-shadow duration-200">
-              <div className="w-16 h-16 bg-kisesa-yellow rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-kisesa-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="text-center p-8 rounded-lg bg-white border border-superfeo-lightpink hover:shadow-xl hover:border-superfeo-pink transition-all duration-300">
+              <div className="w-16 h-16 bg-superfeo-gold rounded-full flex items-center justify-center mx-auto mb-6">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-bebas font-bold text-kisesa-blue mb-2 tracking-wide">
+              <h3 className="text-xl font-heading font-bold text-superfeo-pink mb-3 tracking-wide">
                 {t('onTimeDeparture')}
               </h3>
-              <p className="text-kisesa-blue font-poppins">
+              <p className="text-superfeo-darkgray font-body leading-relaxed">
                 {t('onTimeDesc')}
               </p>
             </div>
             {/* Feature 3 */}
-            <div className="text-center p-6 rounded-lg bg-white border border-kisesa-gray hover:shadow-lg transition-shadow duration-200">
-              <div className="w-16 h-16 bg-kisesa-blue rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center p-8 rounded-lg bg-white border border-superfeo-lightpink hover:shadow-xl hover:border-superfeo-pink transition-all duration-300">
+              <div className="w-16 h-16 bg-superfeo-darkpink rounded-full flex items-center justify-center mx-auto mb-6">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-bebas font-bold text-kisesa-blue mb-2 tracking-wide">
+              <h3 className="text-xl font-heading font-bold text-superfeo-pink mb-3 tracking-wide">
                 {t('safeTravel')}
               </h3>
-              <p className="text-kisesa-blue font-poppins">
+              <p className="text-superfeo-darkgray font-body leading-relaxed">
                 {t('safeTravelDesc')}
               </p>
             </div>
