@@ -161,28 +161,22 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
 
   // Super Feo Express destinations
   const popularRoutes = [
+    { value: 'songea', label: 'SONGEA' },
     { value: 'dar-es-salaam', label: 'DAR ES SALAAM' },
     { value: 'dodoma', label: 'DODOMA' },
     { value: 'mbeya', label: 'MBEYA' },
-    { value: 'songea', label: 'SONGEA' },
     { value: 'njombe', label: 'NJOMBE' },
     { value: 'makambako', label: 'MAKAMBAKO' },
     { value: 'iringa', label: 'IRINGA' },
     { value: 'tunduma', label: 'TUNDUMA' },
-    { value: 'mafinga', label: 'MAFINGA' },
-    { value: 'namtumbo', label: 'NAMTUMBO' },
     { value: 'masasi', label: 'MASASI' },
     { value: 'tunduru', label: 'TUNDURU' },
     { value: 'mtwara', label: 'MTWARA' },
-    { value: 'lindi', label: 'LINDI' },
-    { value: 'nyasa', label: 'NYASA' },
     { value: 'mbinga', label: 'MBINGA' },
-    { value: 'peramiho', label: 'PERAMIHO' },
-    { value: 'kilimanjaro', label: 'KILIMANJARO' },
-    { value: 'arusha', label: 'ARUSHA' },
     { value: 'moshi', label: 'MOSHI' },
     { value: 'mwanza', label: 'MWANZA' },
-    { value: 'tabora', label: 'TABORA' }
+    { value: 'kyela', label: 'KYELA' },
+    { value: 'mbambabay', label: 'MBAMBABAY' }
   ];
 
 
@@ -212,7 +206,7 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-2 sm:gap-2">
                   {/* From */}
                   <div className="space-y-1 sm:space-y-1.5">
-                    <label className="block text-2xs sm:text-xs font-body font-semibold text-kisesa-white mb-1">
+                    <label className="block text-2xs sm:text-xs font-body font-semibold text-white mb-1">
                       {t('from')}
                     </label>
                     <select
@@ -231,7 +225,7 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
 
                   {/* To */}
                   <div className="space-y-1 sm:space-y-1.5">
-                    <label className="block text-2xs sm:text-xs font-body font-semibold text-kisesa-white mb-1">
+                    <label className="block text-2xs sm:text-xs font-body font-semibold text-white mb-1">
                       {t('to')}
                     </label>
                     <select
@@ -250,7 +244,7 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
 
                   {/* Date */}
                   <div className="space-y-1 sm:space-y-1.5">
-                    <label className="block text-2xs sm:text-xs font-body font-semibold text-kisesa-white mb-1">
+                    <label className="block text-2xs sm:text-xs font-body font-semibold text-white mb-1">
                       {t('travelDate')}
                     </label>
                     <input
@@ -266,7 +260,7 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
 
                   {/* Passengers */}
                   <div className="space-y-1 sm:space-y-1.5">
-                    <label className="block text-2xs sm:text-xs font-body font-semibold text-kisesa-white mb-1">
+                    <label className="block text-2xs sm:text-xs font-body font-semibold text-white mb-1">
                       {t('passengers')}
                     </label>
                     <select
@@ -316,9 +310,10 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
                 <p className="text-2xs sm:text-xs font-body text-white mb-1 sm:mb-1.5">{t('popularRoutes')}</p>
                 <div className="flex flex-wrap justify-center items-center gap-0.5 sm:gap-1 mx-auto w-fit">
                   {[
-                    { route: 'Dar es Salaam - Dodoma', from: 'dar-es-salaam', to: 'dodoma' },
-                    { route: 'Dar es Salaam - Mbeya', from: 'dar-es-salaam', to: 'mbeya' },
-                    { route: 'Dar es Salaam - Arusha', from: 'dar-es-salaam', to: 'arusha' }
+                    { route: 'Songea - Dar es Salaam', from: 'songea', to: 'dar-es-salaam' },
+                    { route: 'Dodoma - Songea', from: 'dodoma', to: 'songea' },
+                    { route: 'Songea - Mwanza', from: 'songea', to: 'mwanza' },
+                    { route: 'Moshi - Songea', from: 'moshi', to: 'songea' }
                   ].map(({ route, from, to }) => (
                     <button
                       key={route}

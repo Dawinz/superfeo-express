@@ -28,14 +28,14 @@ const Footer = () => {
             <p className="text-gray-300 font-body mb-4 text-lg">
               {t('footerTagline')}
             </p>
-            <p className="text-gray-400 font-body text-sm leading-relaxed">
+            <p className="text-white font-body text-sm leading-relaxed">
               {t('footerDescription')}
             </p>
           </div>
 
           {/* Quick Links Section */}
           <div>
-            <h4 className="text-lg font-bebas font-bold mb-4 tracking-wide text-superfeo-gold">
+            <h4 className="text-lg font-heading font-bold mb-4 tracking-wide text-superfeo-gold">
               {t('quickLinks')}
             </h4>
             <ul className="space-y-2 font-body">
@@ -45,17 +45,17 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/routes" className="text-gray-300 hover:text-kisesa-yellow transition-colors duration-200">
+                <Link to="/routes" className="text-gray-300 hover:text-superfeo-gold transition-colors duration-200">
                   {t('routes')}
                 </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-gray-300 hover:text-kisesa-yellow transition-colors duration-200">
+                <Link to="/contact" className="text-gray-300 hover:text-superfeo-gold transition-colors duration-200">
                   {t('contact')}
                 </Link>
               </li>
               <li>
-                <Link to="/book" className="text-gray-300 hover:text-kisesa-yellow transition-colors duration-200">
+                <Link to="/book" className="text-gray-300 hover:text-superfeo-gold transition-colors duration-200">
                   {t('bookNow')}
                 </Link>
               </li>
@@ -64,7 +64,7 @@ const Footer = () => {
 
           {/* Contact Info Section */}
           <div>
-            <h4 className="text-lg font-bebas font-bold mb-4 tracking-wide text-superfeo-gold">
+            <h4 className="text-lg font-heading font-bold mb-4 tracking-wide text-superfeo-gold">
               {t('contactInfo')}
             </h4>
             <div className="space-y-3 font-body text-sm">
@@ -91,7 +91,7 @@ const Footer = () => {
               
               {/* Location */}
               <div className="flex items-start space-x-2">
-                <svg className="w-4 h-4 text-kisesa-yellow flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <svg className="w-4 h-4 text-superfeo-gold flex-shrink-0 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"></path>
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                 </svg>

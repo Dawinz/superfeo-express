@@ -140,22 +140,29 @@ const Book = () => {
       return 'bg-gray-300 cursor-not-allowed';
     }
     if (seat.isSelected) {
-      return 'bg-kisesa-orange text-white cursor-pointer';
+      return 'bg-superfeo-gold text-white cursor-pointer';
     }
-    return 'bg-white border-2 border-gray-300 hover:border-kisesa-orange cursor-pointer';
+    return 'bg-white border-2 border-gray-300 hover:border-superfeo-gold cursor-pointer';
   };
 
   // Show overlay instead of completely replacing the UI
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-superfeo-gray via-white to-superfeo-lightpink/30 py-8 relative overflow-hidden">
+      {/* Decorative background pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23E0218A' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundSize: '60px 60px'
+        }}></div>
+      </div>
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-4xl md:text-5xl font-heading font-bold text-kisesa-navy mb-4 tracking-wide">
+          <h1 className="text-4xl md:text-5xl font-heading font-bold text-superfeo-pink mb-4 tracking-wide">
             SELECT YOUR SEATS
           </h1>
-          <p className="text-lg text-gray-600 font-body">
+          <p className="text-lg text-superfeo-darkgray font-body">
             Choose your preferred seats for your journey
           </p>
         </div>
@@ -163,10 +170,10 @@ const Book = () => {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           {/* Seat Map */}
           <div className="lg:col-span-2">
-            <div className="bg-white rounded-xl shadow-lg p-8">
+            <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-8 border border-superfeo-lightpink">
               {/* Driver Section */}
               <div className="flex justify-center mb-6">
-                <div className="bg-kisesa-navy text-white px-4 py-2 rounded-lg font-heading font-bold">
+                <div className="bg-superfeo-pink text-white px-4 py-2 rounded-lg font-heading font-bold">
                   DRIVER
                 </div>
               </div>
@@ -178,7 +185,7 @@ const Book = () => {
                   <span>Available</span>
                 </div>
                 <div className="flex items-center space-x-2">
-                  <div className="w-4 h-4 bg-kisesa-orange rounded"></div>
+                  <div className="w-4 h-4 bg-superfeo-gold rounded"></div>
                   <span>Selected</span>
                 </div>
                 <div className="flex items-center space-x-2">
@@ -213,8 +220,8 @@ const Book = () => {
           {/* Booking Summary */}
           <div className="space-y-6">
             {/* Trip Details */}
-            <div className="bg-white rounded-xl shadow-lg p-6">
-              <h3 className="text-xl font-heading font-bold text-kisesa-navy mb-4 tracking-wide">
+            <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-superfeo-lightpink">
+              <h3 className="text-xl font-heading font-bold text-superfeo-pink mb-4 tracking-wide">
                 TRIP DETAILS
               </h3>
               <div className="space-y-3 text-sm font-body">
@@ -238,8 +245,8 @@ const Book = () => {
             </div>
 
             {/* Selected Seats */}
-            <div className="bg-white rounded-xl shadow-lg p-6">
-              <h3 className="text-xl font-heading font-bold text-kisesa-navy mb-4 tracking-wide">
+            <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-superfeo-lightpink">
+              <h3 className="text-xl font-heading font-bold text-superfeo-pink mb-4 tracking-wide">
                 SELECTED SEATS
               </h3>
               {selectedSeats.length === 0 ? (
@@ -249,7 +256,7 @@ const Book = () => {
                   {selectedSeats.map(seatNumber => (
                     <div key={seatNumber} className="flex justify-between items-center">
                       <span className="font-body">Seat {seatNumber}</span>
-                      <span className="font-heading font-bold text-kisesa-orange">TSh 45,000</span>
+                      <span className="font-heading font-bold text-superfeo-gold">TSh 45,000</span>
                     </div>
                   ))}
                 </div>
@@ -257,8 +264,8 @@ const Book = () => {
             </div>
 
             {/* Station Selection */}
-            <div className="bg-white rounded-xl shadow-lg p-6">
-              <h3 className="text-xl font-heading font-bold text-kisesa-navy mb-4 tracking-wide">
+            <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-superfeo-lightpink">
+              <h3 className="text-xl font-heading font-bold text-superfeo-pink mb-4 tracking-wide">
                 PICKUP & DROP-OFF
               </h3>
               <div className="space-y-4">
@@ -270,7 +277,7 @@ const Book = () => {
                   <select
                     value={pickupStation}
                     onChange={(e) => setPickupStation(e.target.value)}
-                    className="w-full p-3 border-2 border-gray-200 rounded-lg focus:border-kisesa-orange focus:outline-none font-body text-sm"
+                    className="w-full p-3 border-2 border-gray-200 rounded-lg focus:border-superfeo-gold focus:outline-none font-body text-sm"
                     required
                   >
                     <option value="">Select pickup station</option>
@@ -288,7 +295,7 @@ const Book = () => {
                   <select
                     value={dropOffStation}
                     onChange={(e) => setDropOffStation(e.target.value)}
-                    className="w-full p-3 border-2 border-gray-200 rounded-lg focus:border-kisesa-orange focus:outline-none font-body text-sm"
+                    className="w-full p-3 border-2 border-gray-200 rounded-lg focus:border-superfeo-gold focus:outline-none font-body text-sm"
                     required
                   >
                     <option value="">Select drop-off station</option>
@@ -301,8 +308,8 @@ const Book = () => {
             </div>
 
             {/* Price Summary */}
-            <div className="bg-white rounded-xl shadow-lg p-6">
-              <h3 className="text-xl font-heading font-bold text-kisesa-navy mb-4 tracking-wide">
+            <div className="bg-white/90 backdrop-blur-sm rounded-xl shadow-lg p-6 border border-superfeo-lightpink">
+              <h3 className="text-xl font-heading font-bold text-superfeo-pink mb-4 tracking-wide">
                 PRICE SUMMARY
               </h3>
               <div className="space-y-2 text-sm font-body">
@@ -317,7 +324,7 @@ const Book = () => {
                 <hr className="my-2" />
                 <div className="flex justify-between font-bold text-lg">
                   <span>Total:</span>
-                  <span className="text-kisesa-orange">
+                  <span className="text-superfeo-gold">
                     TSh {(selectedSeats.length * 45000 + 2000).toLocaleString()}
                   </span>
                 </div>
@@ -331,7 +338,7 @@ const Book = () => {
               className={`w-full text-white font-body font-bold py-4 px-6 rounded-lg transition-all duration-200 ${
                 selectedSeats.length === 0 || !pickupStation || !dropOffStation || isLoading
                   ? 'bg-gray-400 cursor-not-allowed'
-                  : 'bg-kisesa-orange hover:bg-orange-600 transform hover:scale-105'
+                  : 'bg-superfeo-gold hover:bg-yellow-600 transform hover:scale-105'
               } shadow-lg`}
             >
               {isLoading ? (

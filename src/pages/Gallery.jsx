@@ -115,14 +115,21 @@ const Gallery = () => {
   };
 
   return (
-    <div className="min-h-screen bg-kisesa-gray py-8">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-gradient-to-br from-superfeo-gray via-white to-superfeo-lightpink/30 py-8 relative overflow-hidden">
+      {/* Decorative background pattern */}
+      <div className="absolute inset-0 opacity-5">
+        <div className="absolute inset-0" style={{
+          backgroundImage: `url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23E0218A' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")`,
+          backgroundSize: '60px 60px'
+        }}></div>
+      </div>
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         {/* Header */}
         <div className="text-center mb-12">
-          <h1 className="text-4xl md:text-5xl font-heading font-bold text-kisesa-blue mb-4 tracking-wide">
+          <h1 className="text-4xl md:text-5xl font-heading font-bold text-superfeo-pink mb-4 tracking-wide">
             {t('ourGallery')}
           </h1>
-          <p className="text-lg text-gray-600 font-body max-w-2xl mx-auto">
+          <p className="text-lg text-superfeo-darkgray font-body max-w-2xl mx-auto">
             {t('galleryDesc')}
           </p>
         </div>
@@ -161,43 +168,43 @@ const Gallery = () => {
 
         {/* Features Section */}
         <div className="mt-16 text-center">
-          <h2 className="text-3xl md:text-4xl font-heading font-bold text-kisesa-blue mb-8 tracking-wide">
+          <h2 className="text-3xl md:text-4xl font-heading font-bold text-superfeo-pink mb-8 tracking-wide">
             {t('whyChooseKisesaExpress')}
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center p-6 rounded-lg bg-white shadow-lg">
-              <div className="w-16 h-16 bg-kisesa-yellow rounded-full flex items-center justify-center mx-auto mb-4">
-                <svg className="w-8 h-8 text-kisesa-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <div className="text-center p-6 rounded-xl bg-white/90 backdrop-blur-sm shadow-lg border border-superfeo-lightpink">
+              <div className="w-16 h-16 bg-superfeo-gold rounded-full flex items-center justify-center mx-auto mb-4">
+                <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-heading font-bold text-kisesa-blue mb-2 tracking-wide">
+              <h3 className="text-xl font-heading font-bold text-superfeo-pink mb-2 tracking-wide">
                 {t('premiumComfort')}
               </h3>
               <p className="text-gray-600 font-body">
                 {t('premiumComfortDesc')}
               </p>
             </div>
-            <div className="text-center p-6 rounded-lg bg-white shadow-lg">
-              <div className="w-16 h-16 bg-kisesa-lightblue rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center p-6 rounded-xl bg-white/90 backdrop-blur-sm shadow-lg border border-superfeo-lightpink">
+              <div className="w-16 h-16 bg-superfeo-pink rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-heading font-bold text-kisesa-blue mb-2 tracking-wide">
+              <h3 className="text-xl font-heading font-bold text-superfeo-pink mb-2 tracking-wide">
                 {t('onTimeDeparture')}
               </h3>
               <p className="text-gray-600 font-body">
                 {t('onTimeDepartureDesc')}
               </p>
             </div>
-            <div className="text-center p-6 rounded-lg bg-white shadow-lg">
-              <div className="w-16 h-16 bg-kisesa-blue rounded-full flex items-center justify-center mx-auto mb-4">
+            <div className="text-center p-6 rounded-xl bg-white/90 backdrop-blur-sm shadow-lg border border-superfeo-lightpink">
+              <div className="w-16 h-16 bg-superfeo-darkpink rounded-full flex items-center justify-center mx-auto mb-4">
                 <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                 </svg>
               </div>
-              <h3 className="text-xl font-heading font-bold text-kisesa-blue mb-2 tracking-wide">
+              <h3 className="text-xl font-heading font-bold text-superfeo-pink mb-2 tracking-wide">
                 {t('safeTravel')}
               </h3>
               <p className="text-gray-600 font-body">
@@ -217,7 +224,7 @@ const Gallery = () => {
           <div className="relative max-w-4xl max-h-full">
             <button
               onClick={closeModal}
-              className="absolute -top-10 right-0 text-white hover:text-kisesa-yellow transition-colors duration-200 z-10"
+              className="absolute -top-10 right-0 text-white hover:text-superfeo-gold transition-colors duration-200 z-10"
             >
               <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>

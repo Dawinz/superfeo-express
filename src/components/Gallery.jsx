@@ -35,14 +35,14 @@ const Gallery = () => {
   };
 
   return (
-    <section className="py-16 bg-kisesa-navy">
+    <section className="py-16 bg-superfeo-pink">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Gallery Header */}
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-white mb-4 tracking-wide">
             {t('ourFleet')}
           </h2>
-          <p className="text-lg text-kisesa-white font-body max-w-2xl mx-auto">
+          <p className="text-lg text-white font-body max-w-2xl mx-auto">
             {t('fleetDescription')}
           </p>
         </div>
@@ -64,7 +64,7 @@ const Gallery = () => {
               </div>
               
               {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-kisesa-navy/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+              <div className="absolute inset-0 bg-gradient-to-t from-superfeo-pink/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-4 left-4 right-4">
                   <h3 className="text-white font-heading font-bold text-xl tracking-wide">
                     {image.title}
@@ -89,7 +89,7 @@ const Gallery = () => {
               {/* Close Button */}
               <button
                 onClick={closeModal}
-                className="absolute top-4 right-4 text-white hover:text-kisesa-orange transition-colors duration-200 z-10"
+                className="absolute top-4 right-4 text-white hover:text-superfeo-gold transition-colors duration-200 z-10"
               >
                 <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>

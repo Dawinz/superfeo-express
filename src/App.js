@@ -15,7 +15,7 @@ function App() {
 
   return (
     <LanguageProvider>
-      <div className={`min-h-screen font-poppins${isBookingDialogOpen ? ' blur-sm pointer-events-none select-none' : ''}`}>
+      <div className={`min-h-screen font-body${isBookingDialogOpen ? ' blur-sm pointer-events-none select-none' : ''}`}>
         {/* Navigation */}
         <Navbar />
         

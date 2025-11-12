@@ -89,7 +89,7 @@ const Navbar = () => {
               </Link>
               <button
                 onClick={toggleLanguage}
-                className="flex items-center space-x-1 hover:text-kisesa-blue hover:bg-kisesa-blue hover:bg-opacity-10 px-3 py-2 rounded-md transition-all duration-200 font-poppins font-medium"
+                className="flex items-center space-x-1 hover:text-superfeo-gold hover:bg-superfeo-gold hover:bg-opacity-10 px-3 py-2 rounded-md transition-all duration-200 font-body font-medium"
               >
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129"></path>
@@ -100,7 +100,7 @@ const Navbar = () => {
                 href="https://wa.me/255629202626"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg font-poppins font-semibold transition-colors duration-200"
+                className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded-lg font-body font-semibold transition-colors duration-200"
               >
                 WhatsApp
               </a>
@@ -175,7 +175,7 @@ const Navbar = () => {
             </Link>
             <button
               onClick={toggleLanguage}
-              className="block w-full text-left px-3 py-3 rounded-md text-base font-poppins font-medium text-kisesa-blue hover:text-white hover:bg-kisesa-blue transition-colors duration-200"
+              className="block w-full text-left px-3 py-3 rounded-md text-base font-body font-medium text-superfeo-gold hover:text-white hover:bg-superfeo-gold transition-colors duration-200"
             >
               <div className="flex items-center space-x-2">
                 <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -189,7 +189,7 @@ const Navbar = () => {
                 href="https://wa.me/255629202626"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="block w-full text-center px-4 py-3 bg-green-500 hover:bg-green-600 text-white font-poppins font-semibold rounded-lg transition-colors duration-200"
+                className="block w-full text-center px-4 py-3 bg-green-500 hover:bg-green-600 text-white font-body font-semibold rounded-lg transition-colors duration-200"
                 onClick={closeMenu}
               >
                 WhatsApp

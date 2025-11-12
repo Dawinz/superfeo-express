@@ -77,6 +77,7 @@ export const LanguageProvider = ({ children }) => {
         entertainmentSystem: 'Entertainment System',
         
         // Duration hours
+        threeHours: '3 hours',
         fourHours: '4 hours',
         fiveHours: '5 hours',
         sixHours: '6 hours',
@@ -237,6 +238,7 @@ export const LanguageProvider = ({ children }) => {
         entertainmentSystem: 'Mfumo wa Burudani',
         
         // Duration hours
+        threeHours: 'Masaa 3',
         fourHours: 'Masaa 4',
         fiveHours: 'Masaa 5',
         sixHours: 'Masaa 6',
