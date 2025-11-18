@@ -84,8 +84,8 @@ const Footer = () => {
                 <svg className="w-4 h-4 text-superfeo-gold flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M3 8l7.89 7.89a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
                 </svg>
-                <a href="mailto:booking@superfeoexpress.co.tz" className="text-gray-300 hover:text-white transition-colors duration-200">
-                  booking@superfeoexpress.co.tz
+                <a href="mailto:info@superfeoexpress.co.tz" className="text-gray-300 hover:text-white transition-colors duration-200">
+                  info@superfeoexpress.co.tz
                 </a>
               </div>
               
@@ -96,7 +96,7 @@ const Footer = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"></path>
                 </svg>
                 <span className="text-gray-300">
-                  {t('headOffice')}: Dar es Salaam, Tanzania
+                  {t('headOffice')} - {t('headOfficeLocation')}
                 </span>
               </div>
             </div>

@@ -6,21 +6,18 @@ const Routes = () => {
   const { t } = useLanguage();
   const navigate = useNavigate();
   const routes = [
-    { from: 'SONGEA', to: 'MOSHI', price: 'TSh 45,000', duration: t('tenHours'), fromValue: 'songea', toValue: 'moshi' },
-    { from: 'SONGEA', to: 'DODOMA', price: 'TSh 40,000', duration: t('eightHours'), fromValue: 'songea', toValue: 'dodoma' },
-    { from: 'SONGEA', to: 'MWANZA', price: 'TSh 50,000', duration: t('twelveHours'), fromValue: 'songea', toValue: 'mwanza' },
-    { from: 'SONGEA', to: 'DAR ES SALAAM', price: 'TSh 50,000', duration: t('twelveHours'), fromValue: 'songea', toValue: 'dar-es-salaam' },
-    { from: 'SONGEA', to: 'KYELA', price: 'TSh 35,000', duration: t('sixHours'), fromValue: 'songea', toValue: 'kyela' },
-    { from: 'SONGEA', to: 'TUNDUMA', price: 'TSh 30,000', duration: t('fiveHours'), fromValue: 'songea', toValue: 'tunduma' },
-    { from: 'SONGEA', to: 'MBEYA', price: 'TSh 35,000', duration: t('sixHours'), fromValue: 'songea', toValue: 'mbeya' },
-    { from: 'SONGEA', to: 'MAKAMBAKO', price: 'TSh 25,000', duration: t('fourHours'), fromValue: 'songea', toValue: 'makambako' },
-    { from: 'SONGEA', to: 'IRINGA', price: 'TSh 30,000', duration: t('fiveHours'), fromValue: 'songea', toValue: 'iringa' },
-    { from: 'SONGEA', to: 'NJOMBE', price: 'TSh 20,000', duration: t('threeHours'), fromValue: 'songea', toValue: 'njombe' },
-    { from: 'SONGEA', to: 'MTWARA', price: 'TSh 40,000', duration: t('eightHours'), fromValue: 'songea', toValue: 'mtwara' },
-    { from: 'SONGEA', to: 'MASASI', price: 'TSh 35,000', duration: t('sixHours'), fromValue: 'songea', toValue: 'masasi' },
-    { from: 'SONGEA', to: 'TUNDURU', price: 'TSh 30,000', duration: t('fiveHours'), fromValue: 'songea', toValue: 'tunduru' },
-    { from: 'SONGEA', to: 'MBINGA', price: 'TSh 25,000', duration: t('fourHours'), fromValue: 'songea', toValue: 'mbinga' },
-    { from: 'SONGEA', to: 'MBAMBABAY', price: 'TSh 30,000', duration: t('fiveHours'), fromValue: 'songea', toValue: 'mbambabay' },
+    { from: 'SONGEA', to: 'MOSHI', price: 'TSh 82,000', duration: t('tenHours'), fromValue: 'songea', toValue: 'moshi' },
+    { from: 'SONGEA', to: 'DODOMA', price: 'TSh 47,000', duration: t('eightHours'), fromValue: 'songea', toValue: 'dodoma' },
+    { from: 'SONGEA', to: 'MWANZA', price: 'TSh 93,000', duration: t('twelveHours'), fromValue: 'songea', toValue: 'mwanza' },
+    { from: 'SONGEA', to: 'DAR ES SALAAM', price: 'TSh 64,000', duration: t('twelveHours'), fromValue: 'songea', toValue: 'dar-es-salaam' },
+    { from: 'SONGEA', to: 'TUNDUMA', price: 'TSh 39,000', duration: t('fiveHours'), fromValue: 'songea', toValue: 'tunduma' },
+    { from: 'SONGEA', to: 'MBEYA', price: 'TSh 31,000', duration: t('sixHours'), fromValue: 'songea', toValue: 'mbeya' },
+    { from: 'SONGEA', to: 'IRINGA', price: 'TSh 31,000', duration: t('fiveHours'), fromValue: 'songea', toValue: 'iringa' },
+    { from: 'SONGEA', to: 'MAKAMBAKO', price: 'TSh 20,000', duration: t('fourHours'), fromValue: 'songea', toValue: 'makambako' },
+    { from: 'SONGEA', to: 'NJOMBE', price: 'TSh 16,000', duration: t('threeHours'), fromValue: 'songea', toValue: 'njombe' },
+    { from: 'SONGEA', to: 'MTWARA', price: 'TSh 45,000', duration: t('eightHours'), fromValue: 'songea', toValue: 'mtwara' },
+    { from: 'SONGEA', to: 'MASASI', price: 'TSh 31,000', duration: t('sixHours'), fromValue: 'songea', toValue: 'masasi' },
+    { from: 'SONGEA', to: 'TUNDURU', price: 'TSh 31,000', duration: t('fiveHours'), fromValue: 'songea', toValue: 'tunduru' },
   ];
 
   const handleBookRoute = (route) => {
@@ -57,7 +54,7 @@ const Routes = () => {
             >
               <div className="flex items-center justify-between mb-4">
                 <div className="flex items-center space-x-2">
-                  <div className="w-3 h-3 bg-superfeo-gold rounded-full"></div>
+                  <div className="w-3 h-3 bg-green-500 rounded-full"></div>
                   <span className="font-body font-semibold text-gray-800">{route.from}</span>
                 </div>
                 <svg className="w-6 h-6 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -65,14 +62,14 @@ const Routes = () => {
                 </svg>
                 <div className="flex items-center space-x-2">
                   <span className="font-body font-semibold text-gray-800">{route.to}</span>
-                  <div className="w-3 h-3 bg-superfeo-gold rounded-full"></div>
+                  <div className="w-3 h-3 bg-red-500 rounded-full"></div>
                 </div>
               </div>
 
               <div className="space-y-3">
                 <div className="flex justify-between items-center">
                   <span className="text-sm font-body text-gray-600">{t('price')}</span>
-                  <span className="text-lg font-heading font-bold text-superfeo-gold">{route.price}</span>
+                  <span className="text-lg font-heading font-bold text-superfeo-pink">{route.price}</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-sm font-body text-gray-600">{t('duration')}</span>
@@ -82,7 +79,7 @@ const Routes = () => {
 
               <button 
                 onClick={() => handleBookRoute(route)}
-                className="w-full mt-4 bg-superfeo-gold hover:bg-yellow-600 text-white font-body font-bold py-3 px-4 rounded-lg transition-colors duration-200"
+                className="w-full mt-4 bg-superfeo-pink hover:bg-superfeo-darkpink text-white font-body font-bold py-3 px-4 rounded-lg transition-colors duration-200"
               >
                 {t('bookThisRoute')}
               </button>

@@ -36,7 +36,7 @@ Syncs the project with the remote repository.
 ## Contact Information
 
 - **Phone**: +255 629 202 626
-- **Email**: booking@superfeoexpress.co.tz
+- **Email**: info@superfeoexpress.co.tz
 - **WhatsApp**: [Chat with us](https://wa.me/255629202626)
 
 ## Deployment

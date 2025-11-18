@@ -21,7 +21,7 @@ const Contact = () => {
     e.preventDefault();
     console.log('Contact form submitted:', formData);
     // Handle form submission here
-    alert('Thank you for your message! We will get back to you soon.');
+    alert(t('messageSentSuccess'));
     setFormData({ name: '', email: '', phone: '', message: '' });
   };
 
@@ -38,10 +38,10 @@ const Contact = () => {
         {/* Header */}
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-heading font-bold text-superfeo-pink mb-4 tracking-wide">
-            CONTACT US
+            {t('contactUs')}
           </h1>
           <p className="text-lg text-superfeo-darkgray font-body max-w-2xl mx-auto">
-            Get in touch with us for any inquiries, bookings, or support
+            {t('contactDesc')}
           </p>
         </div>
 
@@ -54,7 +54,7 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label className="block text-sm font-body font-semibold text-gray-700 mb-2">
-                  Jina lako *
+                  {t('fullName')}
                 </label>
                 <input
                   type="text"
@@ -69,7 +69,7 @@ const Contact = () => {
 
               <div>
                 <label className="block text-sm font-body font-semibold text-gray-700 mb-2">
-                  Email Address *
+                  {t('emailAddress')}
                 </label>
                 <input
                   type="email"
@@ -84,7 +84,7 @@ const Contact = () => {
 
               <div>
                 <label className="block text-sm font-body font-semibold text-gray-700 mb-2">
-                  Namba ya Simu
+                  {t('phoneNumber')}
                 </label>
                 <input
                   type="tel"
@@ -98,7 +98,7 @@ const Contact = () => {
 
               <div>
                 <label className="block text-sm font-body font-semibold text-gray-700 mb-2">
-                  Ujumbe *
+                  {t('message')}
                 </label>
                 <textarea
                   name="message"
@@ -115,7 +115,7 @@ const Contact = () => {
                 type="submit"
                 className="w-full bg-superfeo-gold hover:bg-yellow-600 text-white font-body font-bold py-4 px-6 rounded-lg transition-colors duration-200"
               >
-                TUMA UJUMBE
+                {t('sendMessageBtn')}
               </button>
             </form>
           </div>
@@ -154,8 +154,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-heading font-bold text-gray-800 text-lg">{t('email')}</h3>
-                    <p className="text-gray-600 font-body">support@kisesa.co.tz</p>
-                    <p className="text-gray-600 font-body">bookings@kisesa.co.tz</p>
+                    <p className="text-gray-600 font-body">info@superfeoexpress.co.tz</p>
                   </div>
                 </div>
 
@@ -169,8 +168,7 @@ const Contact = () => {
                   </div>
                   <div>
                     <h3 className="font-heading font-bold text-gray-800 text-lg">{t('ofisi')}</h3>
-                    <p className="text-gray-600 font-body">{t('ubungoTerminal')}</p>
-                    <p className="text-gray-600 font-body">{t('darEsSalaaam')}</p>
+                    <p className="text-gray-600 font-body">{t('headOffice')} - {t('ubungoTerminal')} - {t('darEsSalaaam')}</p>
                   </div>
                 </div>
               </div>

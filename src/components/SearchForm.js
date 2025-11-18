@@ -159,24 +159,24 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
     }
   };
 
-  // Super Feo Express destinations
-  const popularRoutes = [
-    { value: 'songea', label: 'SONGEA' },
-    { value: 'dar-es-salaam', label: 'DAR ES SALAAM' },
-    { value: 'dodoma', label: 'DODOMA' },
-    { value: 'mbeya', label: 'MBEYA' },
-    { value: 'njombe', label: 'NJOMBE' },
-    { value: 'makambako', label: 'MAKAMBAKO' },
-    { value: 'iringa', label: 'IRINGA' },
-    { value: 'tunduma', label: 'TUNDUMA' },
-    { value: 'masasi', label: 'MASASI' },
-    { value: 'tunduru', label: 'TUNDURU' },
-    { value: 'mtwara', label: 'MTWARA' },
-    { value: 'mbinga', label: 'MBINGA' },
+  // Super Feo Express destinations - Only Songea routes
+  const destinations = [
     { value: 'moshi', label: 'MOSHI' },
+    { value: 'dodoma', label: 'DODOMA' },
     { value: 'mwanza', label: 'MWANZA' },
-    { value: 'kyela', label: 'KYELA' },
-    { value: 'mbambabay', label: 'MBAMBABAY' }
+    { value: 'dar-es-salaam', label: 'DAR ES SALAAM' },
+    { value: 'tunduma', label: 'TUNDUMA' },
+    { value: 'mbeya', label: 'MBEYA' },
+    { value: 'iringa', label: 'IRINGA' },
+    { value: 'makambako', label: 'MAKAMBAKO' },
+    { value: 'njombe', label: 'NJOMBE' },
+    { value: 'mtwara', label: 'MTWARA' },
+    { value: 'masasi', label: 'MASASI' },
+    { value: 'tunduru', label: 'TUNDURU' }
+  ];
+  
+  const origins = [
+    { value: 'songea', label: 'SONGEA' }
   ];
 
 
@@ -217,7 +217,7 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
                       required
                     >
                       <option value="">{t('selectDeparture')}</option>
-                      {popularRoutes.map(city => (
+                      {origins.map(city => (
                         <option key={city.value} value={city.value}>{city.label}</option>
                       ))}
                     </select>
@@ -236,7 +236,7 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
                       required
                     >
                       <option value="">{t('selectDestination')}</option>
-                      {popularRoutes.map(city => (
+                      {destinations.map(city => (
                         <option key={city.value} value={city.value}>{city.label}</option>
                       ))}
                     </select>
@@ -311,9 +311,9 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
                 <div className="flex flex-wrap justify-center items-center gap-0.5 sm:gap-1 mx-auto w-fit">
                   {[
                     { route: 'Songea - Dar es Salaam', from: 'songea', to: 'dar-es-salaam' },
-                    { route: 'Dodoma - Songea', from: 'dodoma', to: 'songea' },
                     { route: 'Songea - Mwanza', from: 'songea', to: 'mwanza' },
-                    { route: 'Moshi - Songea', from: 'moshi', to: 'songea' }
+                    { route: 'Songea - Moshi', from: 'songea', to: 'moshi' },
+                    { route: 'Songea - Dodoma', from: 'songea', to: 'dodoma' }
                   ].map(({ route, from, to }) => (
                     <button
                       key={route}
