@@ -159,8 +159,9 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
     }
   };
 
-  // Super Feo Express destinations - Only Songea routes
-  const destinations = [
+  // Super Feo Express cities - Available for booking
+  const cities = [
+    { value: 'songea', label: 'SONGEA' },
     { value: 'moshi', label: 'MOSHI' },
     { value: 'dodoma', label: 'DODOMA' },
     { value: 'mwanza', label: 'MWANZA' },
@@ -173,10 +174,6 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
     { value: 'mtwara', label: 'MTWARA' },
     { value: 'masasi', label: 'MASASI' },
     { value: 'tunduru', label: 'TUNDURU' }
-  ];
-  
-  const origins = [
-    { value: 'songea', label: 'SONGEA' }
   ];
 
 
@@ -217,7 +214,7 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
                       required
                     >
                       <option value="">{t('selectDeparture')}</option>
-                      {origins.map(city => (
+                      {cities.map(city => (
                         <option key={city.value} value={city.value}>{city.label}</option>
                       ))}
                     </select>
@@ -236,7 +233,7 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
                       required
                     >
                       <option value="">{t('selectDestination')}</option>
-                      {destinations.map(city => (
+                      {cities.map(city => (
                         <option key={city.value} value={city.value}>{city.label}</option>
                       ))}
                     </select>
