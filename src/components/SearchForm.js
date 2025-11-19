@@ -175,7 +175,9 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
     { value: 'masasi', label: 'MASASI' },
     { value: 'tunduru', label: 'TUNDURU' },
     { value: 'arusha', label: 'ARUSHA' },
-    { value: 'mbinga', label: 'MBINGA' }
+    { value: 'mbinga', label: 'MBINGA' },
+    { value: 'tabora', label: 'TABORA' },
+    { value: 'singida', label: 'SINGIDA' }
   ];
 
 
