@@ -173,7 +173,9 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
     { value: 'njombe', label: 'NJOMBE' },
     { value: 'mtwara', label: 'MTWARA' },
     { value: 'masasi', label: 'MASASI' },
-    { value: 'tunduru', label: 'TUNDURU' }
+    { value: 'tunduru', label: 'TUNDURU' },
+    { value: 'arusha', label: 'ARUSHA' },
+    { value: 'mbinga', label: 'MBINGA' }
   ];
 
 
