@@ -87,6 +87,14 @@ const Navbar = () => {
               >
                 {t('contact')}
               </Link>
+              <a
+                href="https://selousexpress.co.tz"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-selous-purple hover:bg-selous-darkpurple text-white px-4 py-2 rounded-lg font-body font-semibold transition-colors duration-200"
+              >
+                Selous Express
+              </a>
               <button
                 onClick={toggleLanguage}
                 className="flex items-center space-x-1 hover:text-superfeo-gold hover:bg-superfeo-gold hover:bg-opacity-10 px-3 py-2 rounded-md transition-all duration-200 font-body font-medium"
@@ -173,6 +181,15 @@ const Navbar = () => {
             >
               {t('contact')}
             </Link>
+            <a
+              href="https://selousexpress.co.tz"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-center px-4 py-3 bg-selous-purple hover:bg-selous-darkpurple text-white font-body font-semibold rounded-lg transition-colors duration-200"
+              onClick={closeMenu}
+            >
+              Selous Express
+            </a>
             <button
               onClick={toggleLanguage}
               className="block w-full text-left px-3 py-3 rounded-md text-base font-body font-medium text-superfeo-gold hover:text-white hover:bg-superfeo-gold transition-colors duration-200"

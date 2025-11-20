@@ -15,6 +15,10 @@ module.exports = {
           darkgray: '#374151',   // Dark gray for text
           black: '#111827',      // Black for contrast
           gold: '#F59E0B',       // Gold accent color
+        },
+        selous: {
+          purple: '#9333EA',     // Selous Express brand purple
+          darkpurple: '#7C3AED',  // Darker purple for hover states
         }
       },
       fontFamily: {

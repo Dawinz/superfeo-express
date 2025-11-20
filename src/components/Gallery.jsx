@@ -23,6 +23,12 @@ const Gallery = () => {
       src: '/images/superfeo-bus-3.jpg',
       alt: 'Super Feo Express Bus - Professional Service',
       title: 'Reliable Service'
+    },
+    {
+      id: 4,
+      src: '/images/superfeo-bus-4.jpg',
+      alt: 'Super Feo Express Bus - Safe Travel',
+      title: 'Safe Travel'
     }
   ];
 

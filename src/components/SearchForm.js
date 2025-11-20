@@ -328,7 +328,7 @@ const SearchForm = ({ setIsBookingDialogOpen }) => {
                         setError('');
                       }}
                       disabled={isLoading}
-                      className="text-2xs sm:text-xs bg-gray-100 hover:bg-superfeo-pink hover:text-white text-gray-700 px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full font-body transition-colors duration-200 disabled:opacity-50"
+                      className="text-2xs sm:text-xs bg-superfeo-pink hover:bg-superfeo-darkpink text-white px-1.5 sm:px-2 py-0.5 sm:py-1 rounded-full font-body transition-colors duration-200 disabled:opacity-50"
                     >
                       {route}
                     </button>
